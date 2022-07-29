@@ -1,12 +1,12 @@
 {
     "config": {
-      "siteKey": "4fbfd303f2f74c6ea2ec3bc9ab44d454",
+      "siteKey": "ad702064b01c41a88c0946b0ea250ce2",
       "successUrl": "https://www.getmorf.io/",
       "submit": "https://prod-26.canadacentral.logic.azure.com:443/workflows/582e523825684bd6b5746b79018e8bf8/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=kAhOG5UZYkwQF8MLikf7o7L7tDvgdruyO8Ex8C9AZ28"
     },
     "head": {
       "title": "We.Wealth - Account Registration form FSI",
-      "logo": "https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
+      "logo": "https://uploads-ssl.webflow.com/5e0e0d786de93874eb27e0c1/5e138d756b2f0315a9133ee5_AFTIA%20Logo%20Color.svg"
     },
     "body": {
       "items": [
