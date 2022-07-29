@@ -1,12 +1,12 @@
 {
     "config": {
-      "siteKey": "4fbfd303f2f74c6ea2ec3bc9ab44d454",
+      "siteKey": "ad702064b01c41a88c0946b0ea250ce2",
       "successUrl": "https://www.getmorf.io/",
       "submit": "https://prod-11.canadacentral.logic.azure.com:443/workflows/a3dc3d18a76c4275a7d80a16421fccde/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=M93HOXKpOU7UZIkBxeDlCUDGAIS9nYuxa-11A3NrgEA"
     },
     "head": {
       "title": "We.Health - Patient Registration form",
-      "logo": "https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
+      "logo": "https://uploads-ssl.webflow.com/5e0e0d786de93874eb27e0c1/5e138d756b2f0315a9133ee5_AFTIA%20Logo%20Color.svg"
     },
     "body": {
       "items": [
