@@ -1,7 +1,7 @@
 {
     "config": {
-      "submit": "",
-      "siteKey": "",
+      "submit": "https://prod-30.canadacentral.logic.azure.com:443/workflows/4237c8dd05754a88bd28b71900f58bb4/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=ed6Ly30ieeQBPf7fpk9zch9PYsSxB-ouI2MmazE1yfk",
+      "siteKey": "ad702064b01c41a88c0946b0ea250ce2",
       "successUrl": "https://www.getmorf.io/"
     },
     "head": {
