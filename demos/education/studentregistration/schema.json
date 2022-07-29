@@ -1,0 +1,51 @@
+{
+    "type": "object",
+    "properties": {
+        "student": {
+            "type": "object",
+            "properties": {
+                "goals": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "goal": {
+                                "type": "string"
+                            }
+                        },
+                        "required": [
+                            "goal"
+                        ]
+                    }
+                },
+                "fname": {
+                    "type": "string"
+                },
+                "lname": {
+                    "type": "string"
+                },
+                "cellphone": {
+                    "type": "string"
+                },
+                "email": {
+                    "type": "string"
+                },
+                "mname": {
+                    "type": "string"
+                },
+                "gender": {
+                    "type": "string"
+                },
+                "DOB": {
+                    "type": "string"
+                },
+                "Grade": {
+                    "type": "string"
+                },
+                "currentSchool": {
+                    "type": "string"
+                }
+            }
+        }
+    }
+}
