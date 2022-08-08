@@ -2,7 +2,7 @@
   "config": {
     "submit": "https://prod-29.canadacentral.logic.azure.com:443/workflows/a8bb0fd18d624316af0e4e2513267d83/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=WSegwPOJvIeE1mnu9vl-sJFJZCm6p3BGpK-H-cJXrEg",
     "siteKey": "ad702064b01c41a88c0946b0ea250ce2",
-    "successUrl": "",
+    "successUrl": "https://www.getmorf.io/",
     "theme": "",
     "externalId": ""
   },
@@ -102,7 +102,7 @@
           },
           {
             "type": "file",
-            "label": "Add Attachment",
+            "label": "Add Attachment. For multiple attachments please use .Zip",
             "bind": "incident.attachments",
             "required": false
           }
