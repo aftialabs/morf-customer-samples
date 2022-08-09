@@ -10,6 +10,8 @@ After hitting submit, the end user is then forwarded directly to the signing pag
 
 To see a full preview of this demo form, visit https://preview.getmorf.io/?form=/demos/education/studentregistration/student%20registration%20json.json#/
 
+To see a recording of using this demo, visit and download https://github.com/aftialabs/morf-preview/blob/main/demos/education/studentregistration/Morf%20Student%20Registration%20Video.mp4
+
 ## Get Started
 
 1. Acquire a ‘Site Key’ by going to MORF editor https://editor.getmorf.io/#/ and clicking Request site key. (Name, email, Organization name and domain info are required)
