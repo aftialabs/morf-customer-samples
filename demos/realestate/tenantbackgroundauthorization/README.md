@@ -8,4 +8,6 @@ After hitting submit, the end user is then forwarded directly to the signing pag
 
 To see a full preview of this demo, visit https://preview.getmorf.io/?form=/demos/realestate/tenantbackgroundauthorization/TenantBackgroundAuthorization.json
 
+To see a recording of using this demo, visit and download https://github.com/aftialabs/morf-preview/blob/main/demos/realestate/tenantbackgroundauthorization/Tenant%20Background%20Authorization%20with%20Morf.mp4
+
 Download this PDF for the full guide on how to set up and use this demo: https://github.com/aftialabs/morf-preview/blob/main/demos/realestate/tenantbackgroundauthorization/README%20Tenant%20Background%20Authorization%20form%20realestate.pdf
