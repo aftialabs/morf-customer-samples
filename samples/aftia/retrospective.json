@@ -75,7 +75,7 @@
         "type": "textarea",
         "width": "full",
         "bind": "moreaboutsatisfaction",
-        "label": "Please tell us more about the reason for your satisfactiion level",
+        "label": "Please tell us more about the reason for your satisfaction level",
         "required": false
       },
       {
