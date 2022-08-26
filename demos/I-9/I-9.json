@@ -1,0 +1,1381 @@
+{
+    "config": {
+      "submit": "https://prod2-14.canadacentral.logic.azure.com:443/workflows/ef980f30c58d4ded950c3d354ec7b4e1/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=09ZZouvVLm1xDP8v5JXGpKeJZ2-fZ2m5esx6MghMr_g",
+      "siteKey": "f2b7864515aa4d52bda041cdaf448ec8",
+      "successUrl": "https://www.aftia.com/"
+    },
+    "head": {
+      "title": "Employment Eligibility Verification Department of Homeland Security USCIS Form I-9",
+      "logo": "https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
+    },
+    "body": {
+      "items": [
+        {
+          "type": "paragraph",
+          "label": "U.S. Citizenship and Immigration Services",
+          "width": "half"
+        },
+        {
+          "type": "paragraph",
+          "label": "►START HERE: Read instructions carefully before completing this form. The instructions must be available, either in paper or electronically, during completion of this form. Employers are liable for errors in the completion of this form.",
+          "width": "full"
+        },
+        {
+          "type": "paragraph",
+          "label": "ANTI-DISCRIMINATION NOTICE: It is illegal to discriminate against work-authorized individuals. Employers CANNOT specify which document(s) an employee may present to establish employment authorization and identity. The refusal to hire or continue to employ an individual because the documentation presented has a future expiration date may also constitute illegal discrimination.",
+          "width": "full"
+        },
+        {
+          "type": "panel",
+          "label": "Section 1. Employee Information and Attestation",
+          "width": "full",
+          "bind": "employee",
+          "items": [
+            {
+              "type": "paragraph",
+              "label": "(Employees must complete and sign Section 1 of Form I-9 no later than the first day of employment, but not before accepting a job offer.)",
+              "width": "full"
+            },
+            {
+                "type": "text",
+                "label": "Last Name (Family Name)",
+                "bind": "employee.ln",
+                "width": "quarter"
+            },
+            {
+                "type": "text",
+                "label": "First Name (Given Name)",
+                "bind": "employee.fn",
+                "width": "quarter"
+            },
+            {
+                "type": "text",
+                "label": "Middle Initial",
+                "bind": "employee.mi",
+                "width": "quarter"
+            },
+            {
+                "type": "text",
+                "label": "Other Last Names Used (if any)",
+                "bind": "employee.olnu",
+                "required": false,
+                "width": "quarter"
+            },
+            {
+                "type": "text",
+                "label": "Address (Street Number and Name)",
+                "bind": "employee.address",
+                "width": "half"
+            },
+            {
+                "type": "text",
+                "label": "Apt. Number",
+                "bind": "employee.aptNumber",
+                "width": "quarter",
+                "required": false
+            },
+            {
+                "type": "text",
+                "label": "City or Town",
+                "bind": "employee.cot",
+                "width": "quarter"
+            },
+            {
+                "type": "dropdown",
+                "label": "State",
+                "bind": "employee.state",
+                "width": "quarter",
+                "default": " ",
+                "options": [
+                      {
+                        "label": " ",
+                        "value": " "
+                      },
+                      {
+                        "label": "AK",
+                        "value": "AK"
+                      },
+                      {
+                        "label": "AL",
+                        "value": "AL"
+                      },
+                      {
+                        "label": "AR",
+                        "value": "AR"
+                      },
+                      {
+                        "label": "AS",
+                        "value": "AS"
+                      },
+                      {
+                        "label": "AZ",
+                        "value": "AZ"
+                      },
+                      {
+                        "label": "CA",
+                        "value": "CA"
+                      },
+                      {
+                        "label": "CO",
+                        "value": "CO"
+                      },
+                      {
+                        "label": "CT",
+                        "value": "CT"
+                      },
+                      {
+                        "label": "DC",
+                        "value": "DC"
+                      },
+                      {
+                        "label": "DE",
+                        "value": "DE"
+                      },
+                      {
+                        "label": "FL",
+                        "value": "FL"
+                      },
+                      {
+                        "label": "GA",
+                        "value": "GA"
+                      },
+                      {
+                        "label": "GU",
+                        "value": "GU"
+                      },
+                      {
+                        "label": "HI",
+                        "value": "HI"
+                      },
+                      {
+                        "label": "IA",
+                        "value": "IA"
+                      },
+                      {
+                        "label": "ID",
+                        "value": "ID"
+                      },
+                      {
+                        "label": "IL",
+                        "value": "IL"
+                      },
+                      {
+                        "label": "IN",
+                        "value": "IN"
+                      },
+                      {
+                        "label": "KS",
+                        "value": "KS"
+                      },
+                      {
+                        "label": "KY",
+                        "value": "KY"
+                      },
+                      {
+                        "label": "LA",
+                        "value": "LA"
+                      },
+                      {
+                        "label": "MA",
+                        "value": "MA"
+                      },
+                      {
+                        "label": "MD",
+                        "value": "MD"
+                      },
+                      {
+                        "label": "ME",
+                        "value": "ME"
+                      },
+                      {
+                        "label": "MI",
+                        "value": "MI"
+                      },
+                      {
+                        "label": "MN",
+                        "value": "MN"
+                      },
+                      {
+                        "label": "MO",
+                        "value": "MO"
+                      },
+                      {
+                        "label": "MP",
+                        "value": "MP"
+                      },
+                      {
+                        "label": "MS",
+                        "value": "MS"
+                      },
+                      {
+                        "label": "MT",
+                        "value": "MT"
+                      },
+                      {
+                        "label": "NC",
+                        "value": "NC"
+                      },
+                      {
+                        "label": "ND",
+                        "value": "ND"
+                      },
+                      {
+                        "label": "NE",
+                        "value": "NE"
+                      },
+                      {
+                        "label": "NH",
+                        "value": "NH"
+                      },
+                      {
+                        "label": "NJ",
+                        "value": "NJ"
+                      },
+                      {
+                        "label": "NM",
+                        "value": "NM"
+                      },
+                      {
+                        "label": "NV",
+                        "value": "NV"
+                      },
+                      {
+                        "label": "NY",
+                        "value": "NY"
+                      },
+                      {
+                        "label": "OH",
+                        "value": "OH"
+                      },
+                      {
+                        "label": "OK",
+                        "value": "OK"
+                      },
+                      {
+                        "label": "OR",
+                        "value": "OR"
+                      },
+                      {
+                        "label": "PA",
+                        "value": "PA"
+                      },
+                      {
+                        "label": "PR",
+                        "value": "PR"
+                      },
+                      {
+                        "label": "RI",
+                        "value": "RI"
+                      },
+                      {
+                        "label": "SC",
+                        "value": "SC"
+                      },
+                      {
+                        "label": "SD",
+                        "value": "SD"
+                      },
+                      {
+                        "label": "TN",
+                        "value": "TN"
+                      },
+                      {
+                        "label": "TX",
+                        "value": "TX"
+                      },
+                      {
+                        "label": "UT",
+                        "value": "UT"
+                      },
+                      {
+                        "label": "VA",
+                        "value": "VA"
+                      },
+                      {
+                        "label": "VI",
+                        "value": "VI"
+                      },
+                      {
+                        "label": "VT",
+                        "value": "VT"
+                      },
+                      {
+                        "label": "WA",
+                        "value": "WA"
+                      },
+                      {
+                        "label": "WI",
+                        "value": "WI"
+                      },
+                      {
+                        "label": "WV",
+                        "value": "WV"
+                      },
+                      {
+                        "label": "WY",
+                        "value": "WY"
+                      },
+                      {
+                        "label": "CAN",
+                        "value": "CAN"
+                      },
+                      {
+                        "label": "MEX",
+                        "value": "MEX"
+                      }
+                ]
+            },
+            {
+                "type": "text",
+                "label": "ZIP Code",
+                "bind": "employee.zip",
+                "width": "quarter"
+            },
+            {
+                "type": "text",
+                "label": "Date of Birth (mm/dd/yyyy)",
+                "bind": "employee.dob",
+                "regex": "\\d{2}\\/\\d{2}\\/\\d{4}",
+                "invalidMessage": "Value must match the MM/DD/YYYY pattern",
+                "width": "quarter"
+            },
+            {
+                "type": "text",
+                "label": "U.S. Social Security Number",
+                "bind": "employee.ssn",
+                "width": "quarter"
+            },
+            {
+                "type": "email",
+                "label": "Employee's Email Address",
+                "bind": "employee.email",
+                "width": "third"
+            },
+            {
+                "type": "tel",
+                "label": "Employee's Telephone Number",
+                "bind": "employee.phone",
+                "width": "quarter"
+            },
+            {
+                "type": "panel",
+                "width": "full",
+                "items": [
+                  {
+                    "type": "paragraph",
+                    "label": "I am aware that federal law provides for imprisonment and/or fines for false statements or use of false documents in connection with the completion of this form.",
+                    "width": "full"
+                  },
+                    {
+                        "type": "radio",
+                        "label": "I attest, under penalty of perjury, that I am (check one of the following boxes):",
+                        "bind": "employee.citizenship",
+                        "width":"full",
+                        "options": [
+                            {
+                                "label": "1. A citizen of the United States",
+                                "value": "A citizen of the United States"
+                            },
+                            {
+                                "label": "2. A noncitizen national of the United States (See instructions)",
+                                "value": "A noncitizen national of the United States"
+                            },
+                            {
+                                "label": "3. A lawful permanent resident",
+                                "value": "A lawful permanent resident"
+                            },
+                            {
+                                "label": "4. An alien authorized to work",
+                                "value": "An alien authorized to work"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "label": "3. A lawful permanent resident (Alien Registration Number/USCIS Number):",
+                        "bind": "employee.arn",
+                        "width": "quarter",
+                        "required": false
+                    },
+                    {
+                      "type": "panel",
+                      "width": "full",
+                      "items": [
+                          {
+                            "type": "text",
+                            "label": "4. An alien authorized to work until (expiration date, if applicable, mm/dd/yyyy):",
+                            "bind": "employee.alienExpirationDate",
+                            "width": "quarter",
+                            "regex": "\\d{2}\\/\\d{2}\\/\\d{4}",
+                            "invalidMessage": "Value must match the MM/DD/YYYY pattern",
+                            "required": false,
+                            "description": "Some aliens may write 'N/A' in the expiration date field. (See instructions)"
+                          },
+                          {
+                            "type": "paragraph",
+                            "label": "Aliens authorized to work must provide only one of the following document numbers to complete Form I-9: An Alien Registration Number/USCIS Number OR Form I-94 Admission Number OR Foreign Passport Number.",
+                            "width": "full"
+                          },
+                          {
+                            "type": "text",
+                            "label": "1. Alien Registration Number/USCIS Number:",
+                            "bind": "employee.4arn",
+                            "width": "quarter",
+                            "required": false
+                          },
+                          {
+                            "type": "paragraph",
+                            "label": "OR",
+                            "width": "full"
+                          },
+                          {
+                            "type": "text",
+                            "label": "2. Form I-94 Admission Number:",
+                            "bind": "employee.4i94an",
+                            "width": "quarter",
+                            "required": false
+                          },
+                          {
+                            "type": "paragraph",
+                            "label": "OR",
+                            "width": "full"
+                          },
+                          {
+                            "type": "text",
+                            "label": "3. Foreign Passport Number:",
+                            "bind": "employee.4fpn",
+                            "width": "quarter",
+                            "required": false
+                          },
+                          {
+                            "type": "text",
+                            "label": "Country of Issuance:",
+                            "width": "quarter",
+                            "bind": "employee.4coi",
+                            "required": false
+                          }
+                      ]
+                    }                   
+                ]
+            },
+            {
+              "type": "panel",
+              "label": "Preparer and/or Translator Certification (check one):",
+              "bind": "employee.ptc",
+              "width": "full",
+              "items": [
+                {
+                  "type": "radio",
+                  "bind": "employee.ptc.option",
+                  "width": "full",
+                  "options": [
+                    {
+                      "value": "0",
+                      "label": "I did not use a preparer or translator."
+                    },
+                    {
+                      "value": "1",
+                      "label": "A preparer(s) and/or translator(s) assisted the employee in completing Section 1."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "label": "(Fields below must be completed and signed when preparers and/or translators assist an employee in completing Section 1.)",
+                  "width": "full"
+                },
+                {
+                  "type": "text",
+                  "label": "Last Name (Family Name)",
+                  "bind": "employee.ptc.ln",
+                  "width": "quarter"
+                },
+                {
+                  "type": "text",
+                  "label": "First Name (Given Name)",
+                  "bind": "employee.ptc.fn",
+                  "width": "quarter"
+                },
+                {
+                  "type": "text",
+                  "label": "Address (Street Number and Name)",
+                  "bind": "employee.ptc.address",
+                  "width": "half"
+                },
+                {
+                  "type": "text",
+                  "label": "City or Town",
+                  "bind": "employee.ptc.cot",
+                  "width": "quarter"
+                },
+            {
+                "type": "dropdown",
+                "label": "State",
+                "bind": "employee.ptc.state",
+                "width": "quarter",
+                "default": " ",
+                "options": [
+                      {
+                        "label": " ",
+                        "value": " "
+                      },
+                      {
+                        "label": "AK",
+                        "value": "AK"
+                      },
+                      {
+                        "label": "AL",
+                        "value": "AL"
+                      },
+                      {
+                        "label": "AR",
+                        "value": "AR"
+                      },
+                      {
+                        "label": "AS",
+                        "value": "AS"
+                      },
+                      {
+                        "label": "AZ",
+                        "value": "AZ"
+                      },
+                      {
+                        "label": "CA",
+                        "value": "CA"
+                      },
+                      {
+                        "label": "CO",
+                        "value": "CO"
+                      },
+                      {
+                        "label": "CT",
+                        "value": "CT"
+                      },
+                      {
+                        "label": "DC",
+                        "value": "DC"
+                      },
+                      {
+                        "label": "DE",
+                        "value": "DE"
+                      },
+                      {
+                        "label": "FL",
+                        "value": "FL"
+                      },
+                      {
+                        "label": "GA",
+                        "value": "GA"
+                      },
+                      {
+                        "label": "GU",
+                        "value": "GU"
+                      },
+                      {
+                        "label": "HI",
+                        "value": "HI"
+                      },
+                      {
+                        "label": "IA",
+                        "value": "IA"
+                      },
+                      {
+                        "label": "ID",
+                        "value": "ID"
+                      },
+                      {
+                        "label": "IL",
+                        "value": "IL"
+                      },
+                      {
+                        "label": "IN",
+                        "value": "IN"
+                      },
+                      {
+                        "label": "KS",
+                        "value": "KS"
+                      },
+                      {
+                        "label": "KY",
+                        "value": "KY"
+                      },
+                      {
+                        "label": "LA",
+                        "value": "LA"
+                      },
+                      {
+                        "label": "MA",
+                        "value": "MA"
+                      },
+                      {
+                        "label": "MD",
+                        "value": "MD"
+                      },
+                      {
+                        "label": "ME",
+                        "value": "ME"
+                      },
+                      {
+                        "label": "MI",
+                        "value": "MI"
+                      },
+                      {
+                        "label": "MN",
+                        "value": "MN"
+                      },
+                      {
+                        "label": "MO",
+                        "value": "MO"
+                      },
+                      {
+                        "label": "MP",
+                        "value": "MP"
+                      },
+                      {
+                        "label": "MS",
+                        "value": "MS"
+                      },
+                      {
+                        "label": "MT",
+                        "value": "MT"
+                      },
+                      {
+                        "label": "NC",
+                        "value": "NC"
+                      },
+                      {
+                        "label": "ND",
+                        "value": "ND"
+                      },
+                      {
+                        "label": "NE",
+                        "value": "NE"
+                      },
+                      {
+                        "label": "NH",
+                        "value": "NH"
+                      },
+                      {
+                        "label": "NJ",
+                        "value": "NJ"
+                      },
+                      {
+                        "label": "NM",
+                        "value": "NM"
+                      },
+                      {
+                        "label": "NV",
+                        "value": "NV"
+                      },
+                      {
+                        "label": "NY",
+                        "value": "NY"
+                      },
+                      {
+                        "label": "OH",
+                        "value": "OH"
+                      },
+                      {
+                        "label": "OK",
+                        "value": "OK"
+                      },
+                      {
+                        "label": "OR",
+                        "value": "OR"
+                      },
+                      {
+                        "label": "PA",
+                        "value": "PA"
+                      },
+                      {
+                        "label": "PR",
+                        "value": "PR"
+                      },
+                      {
+                        "label": "RI",
+                        "value": "RI"
+                      },
+                      {
+                        "label": "SC",
+                        "value": "SC"
+                      },
+                      {
+                        "label": "SD",
+                        "value": "SD"
+                      },
+                      {
+                        "label": "TN",
+                        "value": "TN"
+                      },
+                      {
+                        "label": "TX",
+                        "value": "TX"
+                      },
+                      {
+                        "label": "UT",
+                        "value": "UT"
+                      },
+                      {
+                        "label": "VA",
+                        "value": "VA"
+                      },
+                      {
+                        "label": "VI",
+                        "value": "VI"
+                      },
+                      {
+                        "label": "VT",
+                        "value": "VT"
+                      },
+                      {
+                        "label": "WA",
+                        "value": "WA"
+                      },
+                      {
+                        "label": "WI",
+                        "value": "WI"
+                      },
+                      {
+                        "label": "WV",
+                        "value": "WV"
+                      },
+                      {
+                        "label": "WY",
+                        "value": "WY"
+                      },
+                      {
+                        "label": "CAN",
+                        "value": "CAN"
+                      },
+                      {
+                        "label": "MEX",
+                        "value": "MEX"
+                      }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "label": "ZIP Code",
+                  "bind": "employee.ptc.zip",
+                  "width": "quarter"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "label": "STOP  Employer Completes Next Page  STOP",
+          "width": "full"
+        },
+        {
+          "type": "panel",
+          "label": "Section 2. Employer or Authorized Representative Review and Verification",
+          "width": "full",
+          "bind": "employee",
+          "items": [
+            {
+              "type": "paragraph",
+              "label": "(Employers or their authorized representative must complete and sign Section 2 within 3 business days of the employee's first day of employment. You must physically examine one document from List A OR a combination of one document from List B and one document from List C as listed on the 'Lists of Acceptable Documents.')",
+              "width": "full"
+            },
+            {
+              "type": "panel",
+              "label": "Employee Info from Section 1",
+              "width": "full",
+              "items": [
+                {
+                    "type": "text",
+                    "label": "Last Name (Family Name)",
+                    "bind": "employee.ln",
+                    "width": "quarter"
+                },
+                {
+                    "type": "text",
+                    "label": "First Name (Given Name)",
+                    "bind": "employee.fn",
+                    "width": "quarter"
+                },
+                {
+                    "type": "text",
+                    "label": "M.I.",
+                    "bind": "employee.mi",
+                    "width": "quarter"
+                },
+                {
+                  "type": "text",
+                  "label": "Citizenship/Immigration Status",
+                  "bind": "employee.citizenship",
+                  "width": "quarter"
+                }
+              ]
+            },
+            {
+              "type": "panel",
+              "label": "List A",
+              "bind": "employer.listA[*]",
+              "width": "full",
+              "items": [
+                {
+                  "type": "paragraph",
+                  "label": "Identity and Employment Authorization",
+                  "width": "full"
+                },
+                {
+                  "type": "panel",
+                  "bind": "employer.listA[*]",
+                  "min": 1,
+                  "max": 3,
+                  "width": "full",
+                  "items": [
+                    {
+                      "type": "text",
+                      "label": "Document Title",
+                      "bind": "employer.listA[*].dt",
+                      "width": "quarter",
+                      "required": false
+                    },
+                    {
+                      "type": "text",
+                      "label": "Issuing Authority",
+                      "bind": "employer.listA[*].ia",
+                      "width": "quarter",
+                      "required": false
+                    },
+                    {
+                      "type": "text",
+                      "label": "Document Number",
+                      "bind": "employer.listA[*].dn",
+                      "width": "quarter",
+                      "required": false
+                    },
+                    {
+                      "type": "text",
+                      "label": "Expiration Date (if any) (mm/dd/yyyy)",
+                      "bind": "employer.listA[*].ed",
+                      "width": "quarter",
+                      "regex": "\\d{2}\\/\\d{2}\\/\\d{4}",
+                      "invalidMessage": "Value must match the MM/DD/YYYY pattern",
+                      "required": false
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "label": "OR",
+              "width": "full"
+            },
+                {
+                  "type": "panel",
+                  "label": "List B",
+                  "bind": "employer.listB",
+                  "width": "full",
+                  "items": [
+                    {
+                      "type": "paragraph",
+                      "label": "Identity",
+                      "width": "full"
+                    },
+                    {
+                      "type": "text",
+                      "label": "Document Title",
+                      "bind": "employer.listB.dt",
+                      "width": "quarter",
+                      "required": false
+                    },
+                    {
+                      "type": "text",
+                      "label": "Issuing Authority",
+                      "bind": "employer.listB.ia",
+                      "width": "quarter",
+                      "required": false
+                    },
+                    {
+                      "type": "text",
+                      "label": "Document Number",
+                      "bind": "employer.listB.dn",
+                      "width": "quarter",
+                      "required": false
+                    },
+                    {
+                      "type": "text",
+                      "label": "Expiration Date (if any) (mm/dd/yyyy)",
+                      "bind": "employer.listB.ed",
+                      "regex": "\\d{2}\\/\\d{2}\\/\\d{4}",
+                      "invalidMessage": "Value must match the MM/DD/YYYY pattern",
+                      "required": false
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "label": "AND",
+                  "width": "full"
+                },
+                {
+                  "type": "panel",
+                  "label": "List C",
+                  "bind": "employer.listC",
+                  "width": "full",
+                  "items": [
+                    {
+                      "type": "paragraph",
+                      "label": "Employment Authorization",
+                      "width": "full"
+                    },
+                    {
+                      "type": "text",
+                      "label": "Document Title",
+                      "bind": "employer.listC.dt",
+                      "width": "quarter",
+                      "required": false
+                    },
+                    {
+                      "type": "text",
+                      "label": "Issuing Authority",
+                      "bind": "employer.listC.ia",
+                      "width": "quarter",
+                      "required": false
+                    },
+                    {
+                      "type": "text",
+                      "label": "Document Number",
+                      "bind": "employer.listC.dn",
+                      "width": "quarter",
+                      "required": false
+                    },
+                    {
+                      "type": "text",
+                      "label": "Expiration Date (if any) (mm/dd/yyyy)",
+                      "bind": "employer.listC.ed",
+                      "regex": "\\d{2}\\/\\d{2}\\/\\d{4}",
+                      "invalidMessage": "Value must match the MM/DD/YYYY pattern",
+                      "required": false
+                    }
+                  ]
+                },
+                {
+                  "type": "textarea",
+                  "label": "Additional Information",
+                  "width": "full",
+                  "bind": "employer.ai",
+                  "required": false
+                },
+                {
+                  "type": "paragraph",
+                  "label": "Certification: I attest, under penalty of perjury, that (1) I have examined the document(s) presented by the above-named employee, (2) the above-listed document(s) appear to be genuine and to relate to the employee named, and (3) to the best of my knowledge the employee is authorized to work in the United States.",
+                  "width": "full"
+                },
+                {
+                  "type": "text",
+                  "label": "The employee's first day of employment (mm/dd/yyyy):",
+                  "bind": "employer.efde",
+                  "width": "quarter",
+                  "description": "(See instructions for exemptions)",
+                  "regex": "\\d{2}\\/\\d{2}\\/\\d{4}",
+                  "invalidMessage": "Value must match the MM/DD/YYYY pattern",
+                  "required": false
+                },
+                {
+                  "type": "panel",
+                  "width": "full",
+                  "bind": "employer.info",
+                  "items": [
+                    {
+                      "type": "text",
+                      "label": "Title of Employer or Authorized Representative",
+                      "bind": "employer.info.title",
+                      "width": "quarter"
+                    },
+                    {
+                      "type": "text",
+                      "label": "Last Name of Employer or Authorized Representative",
+                      "bind": "employer.info.ln",
+                      "width": "quarter"
+                    },
+                    {
+                      "type": "text",
+                      "label": "First Name of Employer or Authorized Representative",
+                      "bind": "employer.info.fn",
+                      "width": "quarter"
+                    },
+                    {
+                      "type": "text",
+                      "label": "Employer's Business or Organization Name",
+                      "bind": "employer.info.organization",
+                      "width": "quarter"
+                    },
+                    {
+                      "type": "text",
+                      "label": "Employer's Business or Organization Address (Street Number and Name)",
+                      "bind": "employer.info.address",
+                      "width": "quarter"
+                    },
+                    {
+                      "type": "text",
+                      "label": "City or Town",
+                      "bind": "employer.info.cot",
+                      "width": "quarter"
+                    },
+                    {
+                      "type": "dropdown",
+                      "label": "State",
+                      "bind": "employer.info.state",
+                      "width": "quarter",
+                      "default": " ",
+                      "options": [
+                            {
+                              "label": " ",
+                              "value": " "
+                            },
+                            {
+                              "label": "AK",
+                              "value": "AK"
+                            },
+                            {
+                              "label": "AL",
+                              "value": "AL"
+                            },
+                            {
+                              "label": "AR",
+                              "value": "AR"
+                            },
+                            {
+                              "label": "AS",
+                              "value": "AS"
+                            },
+                            {
+                              "label": "AZ",
+                              "value": "AZ"
+                            },
+                            {
+                              "label": "CA",
+                              "value": "CA"
+                            },
+                            {
+                              "label": "CO",
+                              "value": "CO"
+                            },
+                            {
+                              "label": "CT",
+                              "value": "CT"
+                            },
+                            {
+                              "label": "DC",
+                              "value": "DC"
+                            },
+                            {
+                              "label": "DE",
+                              "value": "DE"
+                            },
+                            {
+                              "label": "FL",
+                              "value": "FL"
+                            },
+                            {
+                              "label": "GA",
+                              "value": "GA"
+                            },
+                            {
+                              "label": "GU",
+                              "value": "GU"
+                            },
+                            {
+                              "label": "HI",
+                              "value": "HI"
+                            },
+                            {
+                              "label": "IA",
+                              "value": "IA"
+                            },
+                            {
+                              "label": "ID",
+                              "value": "ID"
+                            },
+                            {
+                              "label": "IL",
+                              "value": "IL"
+                            },
+                            {
+                              "label": "IN",
+                              "value": "IN"
+                            },
+                            {
+                              "label": "KS",
+                              "value": "KS"
+                            },
+                            {
+                              "label": "KY",
+                              "value": "KY"
+                            },
+                            {
+                              "label": "LA",
+                              "value": "LA"
+                            },
+                            {
+                              "label": "MA",
+                              "value": "MA"
+                            },
+                            {
+                              "label": "MD",
+                              "value": "MD"
+                            },
+                            {
+                              "label": "ME",
+                              "value": "ME"
+                            },
+                            {
+                              "label": "MI",
+                              "value": "MI"
+                            },
+                            {
+                              "label": "MN",
+                              "value": "MN"
+                            },
+                            {
+                              "label": "MO",
+                              "value": "MO"
+                            },
+                            {
+                              "label": "MP",
+                              "value": "MP"
+                            },
+                            {
+                              "label": "MS",
+                              "value": "MS"
+                            },
+                            {
+                              "label": "MT",
+                              "value": "MT"
+                            },
+                            {
+                              "label": "NC",
+                              "value": "NC"
+                            },
+                            {
+                              "label": "ND",
+                              "value": "ND"
+                            },
+                            {
+                              "label": "NE",
+                              "value": "NE"
+                            },
+                            {
+                              "label": "NH",
+                              "value": "NH"
+                            },
+                            {
+                              "label": "NJ",
+                              "value": "NJ"
+                            },
+                            {
+                              "label": "NM",
+                              "value": "NM"
+                            },
+                            {
+                              "label": "NV",
+                              "value": "NV"
+                            },
+                            {
+                              "label": "NY",
+                              "value": "NY"
+                            },
+                            {
+                              "label": "OH",
+                              "value": "OH"
+                            },
+                            {
+                              "label": "OK",
+                              "value": "OK"
+                            },
+                            {
+                              "label": "OR",
+                              "value": "OR"
+                            },
+                            {
+                              "label": "PA",
+                              "value": "PA"
+                            },
+                            {
+                              "label": "PR",
+                              "value": "PR"
+                            },
+                            {
+                              "label": "RI",
+                              "value": "RI"
+                            },
+                            {
+                              "label": "SC",
+                              "value": "SC"
+                            },
+                            {
+                              "label": "SD",
+                              "value": "SD"
+                            },
+                            {
+                              "label": "TN",
+                              "value": "TN"
+                            },
+                            {
+                              "label": "TX",
+                              "value": "TX"
+                            },
+                            {
+                              "label": "UT",
+                              "value": "UT"
+                            },
+                            {
+                              "label": "VA",
+                              "value": "VA"
+                            },
+                            {
+                              "label": "VI",
+                              "value": "VI"
+                            },
+                            {
+                              "label": "VT",
+                              "value": "VT"
+                            },
+                            {
+                              "label": "WA",
+                              "value": "WA"
+                            },
+                            {
+                              "label": "WI",
+                              "value": "WI"
+                            },
+                            {
+                              "label": "WV",
+                              "value": "WV"
+                            },
+                            {
+                              "label": "WY",
+                              "value": "WY"
+                            },
+                            {
+                              "label": "CAN",
+                              "value": "CAN"
+                            },
+                            {
+                              "label": "MEX",
+                              "value": "MEX"
+                            }
+                        ]
+                      },
+                      {
+                        "type": "text",
+                        "label": "ZIP Code",
+                        "bind": "employer.info.zip",
+                        "width": "quarter"
+                      }
+                  ]
+                }
+          ]
+        },
+        {
+          "type": "panel",
+          "label": "Section 3. Reverification and Rehires",
+          "width": "full",
+          "bind": "rr",
+          "items": [
+            {
+              "type": "paragraph",
+              "label": "(To be completed and signed by employer or authorized representative.)",
+              "width": "full"
+            },
+            {
+              "type": "panel",
+              "label": "A. New Name (if applicable)",
+              "width": "full",
+              "items": [
+                {
+                  "type": "text",
+                  "label": "Last Name (Family Name)",
+                  "bind": "rr.ln",
+                  "width": "quarter",
+                  "required": false
+                },
+                {
+                  "type": "text",
+                  "label": "First Name (Given Name)",
+                  "bind": "rr.fn",
+                  "width": "quarter",
+                  "required": false
+                },
+                {
+                  "type": "text",
+                  "label": "Middle Initial",
+                  "bind": "rr.mi",
+                  "width": "quarter",
+                  "required": false
+                }
+              ]
+            },
+            {
+              "type": "panel",
+              "label": "B. Date of Rehire (if applicable)",
+              "width": "half",
+              "items": [
+                {
+                  "type": "text",
+                  "label": "Date (mm/dd/yyyy)",
+                  "bind": "rr.rehireDate",
+                  "width": "quarter",
+                  "regex": "\\d{2}\\/\\d{2}\\/\\d{4}",
+                  "invalidMessage": "Value must match the MM/DD/YYYY pattern",
+                  "required": false
+                }
+              ]
+            },
+            {
+              "type": "panel",
+              "label": "C. If the employee's previous grant of employment authorization has expired, provide the information for the document or receipt that establishes continuing employment authorization in the space provided below.",
+              "width": "full",
+              "items": [
+                {
+                  "type": "text",
+                  "label": "Document Title",
+                  "bind": "rr.dt",
+                  "width": "quarter",
+                  "required": false
+                },
+                {
+                  "type": "text",
+                  "label": "Document Number",
+                  "bind": "rr.dn",
+                  "width": "quarter",
+                  "required": false
+                },
+                {
+                  "type": "text",
+                  "label": "Expiration Date (if any) (mm/dd/yyyy)",
+                  "bind": "rr.ed",
+                  "width": "quarter",
+                  "regex": "\\d{2}\\/\\d{2}\\/\\d{4}",
+                  "invalidMessage": "Value must match the MM/DD/YYYY pattern",
+                  "required": false
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "label": "I attest, under penalty of perjury, that to the best of my knowledge, this employee is authorized to work in the United States, and if the employee presented document(s), the document(s) I have examined appear to be genuine and to relate to the individual.",
+              "width": "full"
+            },
+            {
+              "type": "text",
+              "label": "Name of Employer or Authorized Representative",
+              "width": "quarter",
+              "bind": "employer.name"
+            }
+          ]
+        },
+        {
+          "type": "submit",
+          "label": "Submit"
+        }
+      ]
+    }
+  }
