@@ -40,45 +40,52 @@
                 "type": "text",
                 "label": "Last Name (Family Name)",
                 "bind": "employee.ln",
-                "width": "quarter"
+                "width": "quarter",
+                "value": " "
             },
             {
                 "type": "text",
                 "label": "First Name (Given Name)",
                 "bind": "employee.fn",
-                "width": "quarter"
+                "width": "quarter",
+                "value": " "
             },
             {
                 "type": "text",
                 "label": "Middle Initial",
                 "bind": "employee.mi",
-                "width": "quarter"
+                "width": "quarter",
+                "value": " "
             },
             {
                 "type": "text",
                 "label": "Other Last Names Used (if any)",
                 "bind": "employee.olnu",
                 "required": false,
-                "width": "quarter"
+                "width": "quarter",
+                "value": " "
             },
             {
                 "type": "text",
                 "label": "Address (Street Number and Name)",
                 "bind": "employee.address",
-                "width": "half"
+                "width": "half",
+                "value": " "
             },
             {
                 "type": "text",
                 "label": "Apt. Number",
                 "bind": "employee.aptNumber",
                 "width": "quarter",
+                "value": " ",
                 "required": false
             },
             {
                 "type": "text",
                 "label": "City or Town",
                 "bind": "employee.cot",
-                "width": "quarter"
+                "width": "quarter",
+                "value": " "
             },
             {
                 "type": "dropdown",
@@ -329,7 +336,8 @@
                 "type": "text",
                 "label": "ZIP Code",
                 "bind": "employee.zip",
-                "width": "quarter"
+                "width": "quarter",
+                "value": " "
             },
             {
                 "type": "text",
@@ -337,25 +345,29 @@
                 "bind": "employee.dob",
                 "regex": "\\d{2}\\/\\d{2}\\/\\d{4}",
                 "invalidMessage": "Value must match the MM/DD/YYYY pattern",
-                "width": "quarter"
+                "width": "quarter",
+                "value": " "
             },
             {
                 "type": "text",
                 "label": "U.S. Social Security Number",
                 "bind": "employee.ssn",
-                "width": "quarter"
+                "width": "quarter",
+                "value": " "
             },
             {
                 "type": "email",
                 "label": "Employee's Email Address",
                 "bind": "employee.email",
-                "width": "third"
+                "width": "third",
+                "value": " "
             },
             {
                 "type": "tel",
                 "label": "Employee's Telephone Number",
                 "bind": "employee.phone",
-                "width": "quarter"
+                "width": "quarter",
+                "value": " "
             },
             {
                 "type": "panel",
@@ -370,7 +382,8 @@
                         "type": "radio",
                         "label": "I attest, under penalty of perjury, that I am (check one of the following boxes):",
                         "bind": "employee.citizenship",
-                        "width":"full",
+                        "width": "full",
+                        "value": " ",
                         "options": [
                             {
                                 "label": "1. A citizen of the United States",
@@ -395,6 +408,7 @@
                         "label": "3. A lawful permanent resident (Alien Registration Number/USCIS Number):",
                         "bind": "employee.arn",
                         "width": "quarter",
+                        "value": " ",
                         "required": false
                     },
                     {
@@ -409,7 +423,8 @@
                             "regex": "\\d{2}\\/\\d{2}\\/\\d{4}",
                             "invalidMessage": "Value must match the MM/DD/YYYY pattern",
                             "required": false,
-                            "description": "Some aliens may write 'N/A' in the expiration date field. (See instructions)"
+                            "description": "Some aliens may write 'N/A' in the expiration date field. (See instructions)",
+                            "value": " "
                           },
                           {
                             "type": "paragraph",
@@ -421,6 +436,7 @@
                             "label": "1. Alien Registration Number/USCIS Number:",
                             "bind": "employee.4arn",
                             "width": "quarter",
+                            "value": " ",
                             "required": false
                           },
                           {
@@ -433,6 +449,7 @@
                             "label": "2. Form I-94 Admission Number:",
                             "bind": "employee.4i94an",
                             "width": "quarter",
+                            "value": " ",
                             "required": false
                           },
                           {
@@ -445,6 +462,7 @@
                             "label": "3. Foreign Passport Number:",
                             "bind": "employee.4fpn",
                             "width": "quarter",
+                            "value": " ",
                             "required": false
                           },
                           {
@@ -452,6 +470,7 @@
                             "label": "Country of Issuance:",
                             "width": "quarter",
                             "bind": "employee.4coi",
+                            "value": " ",
                             "required": false
                           }
                       ]
@@ -468,6 +487,7 @@
                   "type": "radio",
                   "bind": "employee.ptc.option",
                   "width": "full",
+                  "value": " ",
                   "options": [
                     {
                       "value": "0",
@@ -488,25 +508,29 @@
                   "type": "text",
                   "label": "Last Name (Family Name)",
                   "bind": "employee.ptc.ln",
-                  "width": "quarter"
+                  "width": "quarter",
+                  "value": " "
                 },
                 {
                   "type": "text",
                   "label": "First Name (Given Name)",
                   "bind": "employee.ptc.fn",
-                  "width": "quarter"
+                  "width": "quarter",
+                  "value": " "
                 },
                 {
                   "type": "text",
                   "label": "Address (Street Number and Name)",
                   "bind": "employee.ptc.address",
-                  "width": "half"
+                  "width": "half",
+                  "value": " "
                 },
                 {
                   "type": "text",
                   "label": "City or Town",
                   "bind": "employee.ptc.cot",
-                  "width": "quarter"
+                  "width": "quarter",
+                  "value": " "
                 },
             {
                 "type": "dropdown",
@@ -757,7 +781,8 @@
                   "type": "text",
                   "label": "ZIP Code",
                   "bind": "employee.ptc.zip",
-                  "width": "quarter"
+                  "width": "quarter",
+                  "value": " "
                 }
               ]
             }
@@ -772,6 +797,7 @@
           "type": "panel",
           "label": "Section 2. Employer or Authorized Representative Review and Verification",
           "width": "full",
+          "value": " ",
           "bind": "employee",
           "items": [
             {
@@ -788,25 +814,29 @@
                     "type": "text",
                     "label": "Last Name (Family Name)",
                     "bind": "employee.ln",
-                    "width": "quarter"
+                    "width": "quarter",
+                    "value": " "
                 },
                 {
                     "type": "text",
                     "label": "First Name (Given Name)",
                     "bind": "employee.fn",
-                    "width": "quarter"
+                    "width": "quarter",
+                    "value": " "
                 },
                 {
                     "type": "text",
                     "label": "M.I.",
                     "bind": "employee.mi",
-                    "width": "quarter"
+                    "width": "quarter",
+                    "value": " "
                 },
                 {
                   "type": "text",
                   "label": "Citizenship/Immigration Status",
                   "bind": "employee.citizenship",
-                  "width": "quarter"
+                  "width": "quarter",
+                  "value": " "
                 }
               ]
             },
@@ -883,6 +913,7 @@
                       "label": "Document Title",
                       "bind": "employer.listB.dt",
                       "width": "quarter",
+                      "value": " ",
                       "required": false
                     },
                     {
@@ -890,6 +921,7 @@
                       "label": "Issuing Authority",
                       "bind": "employer.listB.ia",
                       "width": "quarter",
+                      "value": " ",
                       "required": false
                     },
                     {
@@ -897,6 +929,7 @@
                       "label": "Document Number",
                       "bind": "employer.listB.dn",
                       "width": "quarter",
+                      "value": " ",
                       "required": false
                     },
                     {
@@ -905,6 +938,7 @@
                       "bind": "employer.listB.ed",
                       "regex": "\\d{2}\\/\\d{2}\\/\\d{4}",
                       "invalidMessage": "Value must match the MM/DD/YYYY pattern",
+                      "value": " ",
                       "required": false
                     }
                   ]
@@ -930,6 +964,7 @@
                       "label": "Document Title",
                       "bind": "employer.listC.dt",
                       "width": "quarter",
+                      "value": " ",
                       "required": false
                     },
                     {
@@ -937,6 +972,7 @@
                       "label": "Issuing Authority",
                       "bind": "employer.listC.ia",
                       "width": "quarter",
+                      "value": " ",
                       "required": false
                     },
                     {
@@ -944,6 +980,7 @@
                       "label": "Document Number",
                       "bind": "employer.listC.dn",
                       "width": "quarter",
+                      "value": " ",
                       "required": false
                     },
                     {
@@ -952,6 +989,7 @@
                       "bind": "employer.listC.ed",
                       "regex": "\\d{2}\\/\\d{2}\\/\\d{4}",
                       "invalidMessage": "Value must match the MM/DD/YYYY pattern",
+                      "value": " ",
                       "required": false
                     }
                   ]
@@ -961,6 +999,7 @@
                   "label": "Additional Information",
                   "width": "full",
                   "bind": "employer.ai",
+                  "value": " ",
                   "required": false
                 },
                 {
@@ -976,6 +1015,7 @@
                   "description": "(See instructions for exemptions)",
                   "regex": "\\d{2}\\/\\d{2}\\/\\d{4}",
                   "invalidMessage": "Value must match the MM/DD/YYYY pattern",
+                  "value": " ",
                   "required": false
                 },
                 {
@@ -987,37 +1027,43 @@
                       "type": "text",
                       "label": "Title of Employer or Authorized Representative",
                       "bind": "employer.info.title",
-                      "width": "quarter"
+                      "width": "quarter",
+                      "value": " "
                     },
                     {
                       "type": "text",
                       "label": "Last Name of Employer or Authorized Representative",
                       "bind": "employer.info.ln",
-                      "width": "quarter"
+                      "width": "quarter",
+                      "value": " "
                     },
                     {
                       "type": "text",
                       "label": "First Name of Employer or Authorized Representative",
                       "bind": "employer.info.fn",
-                      "width": "quarter"
+                      "width": "quarter",
+                      "value": " "
                     },
                     {
                       "type": "text",
                       "label": "Employer's Business or Organization Name",
                       "bind": "employer.info.organization",
-                      "width": "quarter"
+                      "width": "quarter",
+                      "value": " "
                     },
                     {
                       "type": "text",
                       "label": "Employer's Business or Organization Address (Street Number and Name)",
                       "bind": "employer.info.address",
-                      "width": "quarter"
+                      "width": "quarter",
+                      "value": " "
                     },
                     {
                       "type": "text",
                       "label": "City or Town",
                       "bind": "employer.info.cot",
-                      "width": "quarter"
+                      "width": "quarter",
+                      "value": " "
                     },
                     {
                       "type": "dropdown",
@@ -1295,6 +1341,7 @@
                   "label": "Last Name (Family Name)",
                   "bind": "rr.ln",
                   "width": "quarter",
+                  "value": " ",
                   "required": false
                 },
                 {
@@ -1302,6 +1349,7 @@
                   "label": "First Name (Given Name)",
                   "bind": "rr.fn",
                   "width": "quarter",
+                  "value": " ",
                   "required": false
                 },
                 {
@@ -1309,6 +1357,7 @@
                   "label": "Middle Initial",
                   "bind": "rr.mi",
                   "width": "quarter",
+                  "value": " ",
                   "required": false
                 }
               ]
@@ -1325,6 +1374,7 @@
                   "width": "quarter",
                   "regex": "\\d{2}\\/\\d{2}\\/\\d{4}",
                   "invalidMessage": "Value must match the MM/DD/YYYY pattern",
+                  "value": " ",
                   "required": false
                 }
               ]
@@ -1339,6 +1389,7 @@
                   "label": "Document Title",
                   "bind": "rr.dt",
                   "width": "quarter",
+                  "value": " ",
                   "required": false
                 },
                 {
@@ -1346,6 +1397,7 @@
                   "label": "Document Number",
                   "bind": "rr.dn",
                   "width": "quarter",
+                  "value": " ",
                   "required": false
                 },
                 {
@@ -1355,6 +1407,7 @@
                   "width": "quarter",
                   "regex": "\\d{2}\\/\\d{2}\\/\\d{4}",
                   "invalidMessage": "Value must match the MM/DD/YYYY pattern",
+                  "value": " ",
                   "required": false
                 }
               ]
@@ -1368,7 +1421,8 @@
               "type": "text",
               "label": "Name of Employer or Authorized Representative",
               "width": "quarter",
-              "bind": "employer.name"
+              "bind": "employer.name",
+              "value": " "
             }
           ]
         },
