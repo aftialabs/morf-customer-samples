@@ -1427,6 +1427,11 @@
           ]
         },
         {
+          "type": "hidden",
+          "bind": "userId",
+          "value": " "
+        },
+        {
           "type": "submit",
           "label": "Submit"
         }
