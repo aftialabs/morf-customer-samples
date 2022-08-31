@@ -1,0 +1,62 @@
+{
+    "config": {
+      "submit": "https://prod2-23.canadacentral.logic.azure.com:443/workflows/338a4d7a15504d23b5f2f8a9dbdea673/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=yacneIXLjBBrQaNCnJhXoiqBbuIXU4jPUyzCx4ZuAgE",
+      "siteKey": "f2b7864515aa4d52bda041cdaf448ec8",
+      "successUrl": "https://www.aftia.com"
+    },
+    "head": {
+      "title": "AITFA Job Candidate Confidentiality Agreement",
+      "logo": "https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
+    },
+    "body": {
+      "items": [
+        {
+          "type": "paragraph",
+          "label": "During the course of your job candidacy, you may receive information relating to Aitfa.com that is not known to the general public ('Confidential Information').  Confidential Information includes, among other things, Aitfa.com’s technology, facilities, assets, systems, business partners, investors, customers, vendors, business plans, marketing plans or data, finances and other information, which should be reasonably considered as confidential.  Confidential Information may be contained in tangible materials such as drawings, data, specifications, reports and computer programs, or may be in the nature of unwritten knowledge.  This Confidential Information is essential to the effective operation of the Company and gives the Company a competitive advantage over other firms pursuing related business activities. As a growing, high technology company, Aitfa.com must protect Confidential Information against unauthorized use and disclosure. ",
+          "width": "full"
+        },
+        {
+          "type": "paragraph",
+          "label": "In consideration of Aitfa's willingness to provide you with Confidential Information during your job candidacy, you agree (i) all Confidential Information will remain Aitfa.com's exclusive property, (ii) you will use Confidential Information only to evaluate potential employment with Aitfa.com and agree not to trade securities based on that information, (iii) you will not disclose Confidential Information to any individual, company or other third party, (iv) you will notify Aitfa.com immediately upon discovery of any unauthorized use or disclosure of Confidential Information or any other breach of this agreement, and, (v) upon Aitfa.com’s request, you will deliver to Aitfa.com all materials containing Confidential Information and, at our option, provide Aitfa.com with a written certification of compliance.  You also agree that you will not disclose any information to Aitfa.com that is confidential or proprietary to you or any other person or company.",
+          "width": "full"
+        },
+        {
+          "type": "paragraph",
+          "label": "If a provision of this agreement is held invalid under any applicable law, such invalidity will not affect any other provision of this agreement that can be given effect without the invalid provision.  Further, all terms and conditions of this agreement will be deemed enforceable to the fullest extent permissible under applicable law, and, when necessary, the court is requested to reform any and all terms or conditions to give them such effect. ",
+          "width": "full"
+        },
+        {
+          "type": "paragraph",
+          "label": "Aitfa.com is relying upon your promise to comply strictly with this agreement.  Any violation of this agreement may cause substantial and irreparable harm to Aitfa.com.  Accordingly, without limiting any other available remedies, this agreement is specifically enforceable by Aitfa.com.  This agreement will be construed in accordance with the laws of the State of Washington. ",
+          "width": "full"
+        },
+        {
+          "type": "paragraph",
+          "label": "Any failure by Aitfa.com to enforce your strict performance of any provision of this agreement will not constitute a waiver of Aitfa.com’s right to subsequently enforce such provision or any other provision of this agreement.",
+          "width": "full"
+        },
+        {
+          "type": "text",
+          "label": "First Name",
+          "width": "quarter",
+          "bind": "employee.fn"
+        },
+        {
+          "type": "text",
+          "label": "Last Name",
+          "width": "quarter",
+          "bind": "employee.ln"
+        },
+        {
+          "type": "email",
+          "label": "Email",
+          "width": "half",
+          "bind": "employee.email"
+        },
+        {
+          "type": "submit",
+          "label": "Submit"
+        }
+      ]
+    }
+  }
