@@ -509,34 +509,39 @@
                   "label": "Last Name (Family Name)",
                   "bind": "employee.ptc.ln",
                   "width": "quarter",
-                  "value": " "
+                  "value": " ",
+                  "required": false
                 },
                 {
                   "type": "text",
                   "label": "First Name (Given Name)",
                   "bind": "employee.ptc.fn",
                   "width": "quarter",
-                  "value": " "
+                  "value": " ",
+                  "required": false
                 },
                 {
                   "type": "text",
                   "label": "Address (Street Number and Name)",
                   "bind": "employee.ptc.address",
                   "width": "half",
-                  "value": " "
+                  "value": " ",
+                  "required": false
                 },
                 {
                   "type": "text",
                   "label": "City or Town",
                   "bind": "employee.ptc.cot",
                   "width": "quarter",
-                  "value": " "
+                  "value": " ",
+                  "required": false
                 },
             {
                 "type": "dropdown",
                 "label": "State",
                 "bind": "employee.ptc.state",
                 "width": "quarter",
+                "required": false,
                 "default": " ",
                 "options": [
                       {
@@ -782,7 +787,8 @@
                   "label": "ZIP Code",
                   "bind": "employee.ptc.zip",
                   "width": "quarter",
-                  "value": " "
+                  "value": " ",
+                  "required": false
                 }
               ]
             }
@@ -1028,42 +1034,48 @@
                       "label": "Title of Employer or Authorized Representative",
                       "bind": "employer.info.title",
                       "width": "quarter",
-                      "value": " "
+                      "value": " ",
+                      "required": false
                     },
                     {
                       "type": "text",
                       "label": "Last Name of Employer or Authorized Representative",
                       "bind": "employer.info.ln",
                       "width": "quarter",
-                      "value": " "
+                      "value": " ",
+                      "required": false
                     },
                     {
                       "type": "text",
                       "label": "First Name of Employer or Authorized Representative",
                       "bind": "employer.info.fn",
                       "width": "quarter",
-                      "value": " "
+                      "value": " ",
+                      "required": false
                     },
                     {
                       "type": "text",
                       "label": "Employer's Business or Organization Name",
                       "bind": "employer.info.organization",
                       "width": "quarter",
-                      "value": " "
+                      "value": " ",
+                      "required": false
                     },
                     {
                       "type": "text",
                       "label": "Employer's Business or Organization Address (Street Number and Name)",
                       "bind": "employer.info.address",
                       "width": "quarter",
-                      "value": " "
+                      "value": " ",
+                      "required": false
                     },
                     {
                       "type": "text",
                       "label": "City or Town",
                       "bind": "employer.info.cot",
                       "width": "quarter",
-                      "value": " "
+                      "value": " ",
+                      "required": false
                     },
                     {
                       "type": "dropdown",
@@ -1071,6 +1083,7 @@
                       "bind": "employer.info.state",
                       "width": "quarter",
                       "default": " ",
+                      "required": false,
                       "options": [
                             {
                               "label": " ",
@@ -1315,7 +1328,8 @@
                         "label": "ZIP Code",
                         "bind": "employer.info.zip",
                         "width": "quarter",
-                        "value": " "
+                        "value": " ",
+                        "required": false
                       }
                   ]
                 }
@@ -1423,7 +1437,8 @@
               "label": "Name of Employer or Authorized Representative",
               "width": "quarter",
               "bind": "employer.name",
-              "value": " "
+              "value": " ",
+              "required": false
             }
           ]
         },
