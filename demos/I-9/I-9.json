@@ -1314,7 +1314,8 @@
                         "type": "text",
                         "label": "ZIP Code",
                         "bind": "employer.info.zip",
-                        "width": "quarter"
+                        "width": "quarter",
+                        "value": " "
                       }
                   ]
                 }
