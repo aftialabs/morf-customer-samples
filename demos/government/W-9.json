@@ -1,0 +1,317 @@
+{
+  "config": {
+    "siteKey": "8949362dc63e4315a72cc9f10239acd3",
+    "successUrl": "http://getmorf.io/"
+  },
+  "head": {
+    "title": "W-9 Request for Taxpayer Identification Number and Certification",
+    "logo": "https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
+  },
+  "body": {
+    "items": [
+      {
+        "type": "paragraph",
+        "width": "full",
+        "label": "Go to www.irs.gov/FormW9 for instructions and the latest information."
+      },
+      {
+        "type": "text",
+        "label": "Name (as shown on your income tax return)",
+        "bind": "name",
+        "placeholder": "e.g. Jane Doe",
+        "required": true,
+        "width": "full"
+      },
+      {
+        "type": "text",
+        "label": "Business name/disregarded entity name, if different from above",
+        "bind": "business_name",
+        "required": false,
+        "width": "full",
+        "description": "If you have a business name, trade name, DBA name, or disregarded entity name, you may enter it"
+      },
+      {
+        "type": "panel",
+        "width": "full",
+        "label": "Tax Classification",
+        "items": [
+          {
+            "type": "dropdown",
+            "label": "Federal tax classification of the person whose name is entered above",
+            "bind": "fed_tax_cls",
+            "options": [
+              {
+                "label": "Individual/sole proprietor or single-member LLC",
+                "value": "individual_sole"
+              },
+              {
+                "label": "Corporation",
+                "value": "corp"
+              },
+              {
+                "label": "S Corporation",
+                "value": "s_corp"
+              },
+              {
+                "label": "Partnership",
+                "value": "partnership"
+              },
+              {
+                "label": "Trustee/Estate",
+                "value": "trustee_estate"
+              },
+              {
+                "label": "Limited Liability Company",
+                "value": "LLC"
+              },
+              {
+                "label": "Other",
+                "value": "other"
+              }
+            ]
+          },
+          {
+            "type": "textarea",
+            "label": "Other (Describe)",
+            "bind": "other_desc",
+            "required": false
+          },
+          {
+            "type": "dropdown",
+            "label": "Limited Liability Company",
+            "description": "Select the appropriate tax classification of the single-member owner. ",
+            "bind": "LLC_sub",
+            "width": "full",
+            "options": [
+              {
+                "label": "C=Corporation",
+                "value": "LLC_sub.c"
+              },
+              {
+                "label": "S=S Corporation",
+                "value": "LLC_sub.s"
+              },
+              {
+                "label": "P=Partnership",
+                "value": "LLC_sub.p"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "panel",
+        "width": "full",
+        "label": "Exemptions",
+        "items": [
+          {
+            "type": "paragraph",
+            "width": "full",
+            "label": "Exemptions (codes apply only to certain entities, not individuals",
+            "bind": "4  Exemptions (codes apply only to"
+          },
+          {
+            "type": "dropdown",
+            "width": "full",
+            "options": [
+              {
+                "label": "1 - An organization exempt from tax under section 501(a), any IRA, or a custodial account under section 403(b)(7) if the account satisfies the requirements of section 401(f)(2)",
+                "value": "1"
+              },
+              {
+                "label": "2 - The United States or any of its agencies or instrumentalities",
+                "value": "2"
+              },
+              {
+                "label": "3 - A state, the District of Columbia, a U.S. commonwealth or possession, or any of their political subdivisions or instrumentalities",
+                "value": "3"
+              },
+              {
+                "label": "4 - A foreign government or any of its political subdivisions, agencies, or instrumentalities",
+                "value": "4"
+              },
+              {
+                "label": "5 - A corporation",
+                "value": "5"
+              },
+              {
+                "label": "6 - A dealer in securities or commodities required to register in the United States, the District of Columbia, or a U.S. commonwealth or possession",
+                "value": "6"
+              },
+              {
+                "label": "7 - A futures commission merchant registered with the Commodity Futures Trading Commission",
+                "value": "7"
+              },
+              {
+                "label": "8 -A real estate investment trust",
+                "value": "8"
+              },
+              {
+                "label": "9 - An entity registered at all times during the tax year under the Investment Company Act of 1940",
+                "value": "9"
+              },
+              {
+                "label": "10 - A common trust fund operated by a bank under section 584(a)",
+                "value": "10"
+              },
+              {
+                "label": "11 -A financial institution",
+                "value": "11"
+              },
+              {
+                "label": "12 - A middleman known in the investment community as a nominee or custodian",
+                "value": "12"
+              },
+              {
+                "label": "13 - A trust exempt from tax under section 664 or described in section 4947",
+                "value": "13"
+              }
+            ]
+          },
+          {
+            "type": "dropdown",
+            "label": "Exemption from FATCA reporting code (if any)",
+            "bind": "exmempt_payee_code",
+            "width": "half",
+            "options": [
+              {
+                "label": "A—An organization exempt from tax under section 501(a) or any individual retirement plan as defined in section 7701(a)(37)",
+                "value": "A"
+              },
+              {
+                "label": "B—The United States or any of its agencies or instrumentalities",
+                "value": "B"
+              },
+              {
+                "label": "C—A state, the District of Columbia, a U.S. commonwealth or possession, or any of their political subdivisions or instrumentalities",
+                "value": "C"
+              },
+              {
+                "label": "D—A corporation the stock of which is regularly traded on one or more established securities markets, as described in Regulations section 1.1472-1(c)(1)(i)",
+                "value": "D"
+              },
+              {
+                "label": "E—A corporation that is a member of the same expanded affiliated group as a corporation described in Regulations section 1.1472-1(c)(1)(i)",
+                "value": "E"
+              },
+              {
+                "label": "F—A dealer in securities, commodities, or derivative financial instruments (including notional principal contracts, futures, forwards, and options) that is registered as such under the laws of the United States or any state",
+                "value": "F"
+              },
+              {
+                "label": "G—A real estate investment trust",
+                "value": "G"
+              },
+              {
+                "label": "H—A regulated investment company as defined in section 851 or an entity registered at all times during the tax year under the Investment Company Act of 1940",
+                "value": "H"
+              },
+              {
+                "label": "I—A common trust fund as defined in section 584(a)",
+                "value": "I"
+              },
+              {
+                "label": "J—A bank as defined in section 581",
+                "value": "J"
+              },
+              {
+                "label": "K—A broker",
+                "value": "K"
+              },
+              {
+                "label": "L—A trust exempt from tax under section 664 or described in section",
+                "value": "L"
+              },
+              {
+                "label": "M—A tax exempt trust under a section 403(b) plan or section 457(g) plan",
+                "value": "M"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "panel",
+        "width": "full",
+        "label": "Address",
+        "items": [
+          {
+            "type": "text",
+            "label": "Address (number, street, and apt. or suite no.)",
+            "bind": "address"
+          },
+          {
+            "type": "text",
+            "label": "City, state, and ZIP code",
+            "bind": "city_state_zip"
+          },
+          {
+            "type": "textarea",
+            "width": "full",
+            "label": "Requester’s name and address (optional)",
+            "required": false,
+            "bind": "req_name_address"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "label": "List account number(s) here (optional)",
+        "bind": "account_numbers",
+        "required": false,
+        "width": "full"
+      },
+      {
+        "type": "panel",
+        "width": "full",
+        "label": "Tax Identification Number",
+        "items": [
+          {
+            "type": "text",
+            "label": "SSN",
+            "width": "half",
+            "bind": "ssn",
+            "regex": "^\\d{3}-\\d{2}-\\d{4}$",
+            "placeholder": "e.g. 030 72 7381"
+          },
+          {
+            "type": "number",
+            "label": "Employee Identification Number",
+            "width": "half",
+            "bind": "ein",
+            "placeholder": "e.g. 12 3456789"
+          },
+          {
+            "type": "paragraph",
+            "width": "full",
+            "label": "Enter your TIN in the appropriate box. The TIN provided must match the name given above to avoid backup withholding. For individuals, this is generally your social security number (SSN). However, for a resident alien, sole proprietor, or disregarded entity, see the instructions for Part I, later. For other entities, it is your employer identification number (EIN). If you do not have a number, see How to get a TIN, later."
+          },
+          {
+          "type" :"paragraph",
+          "width": "full",
+          "label": "Note: If the account is in more than one name, see the instructions for line 1. Also see What Name and Number To Give the Requester for guidelines on whose number to enter."
+          }
+        ]
+      },
+            {
+        "type": "panel",
+        "width": "full",
+        "label": "Certification",
+        "items": [
+
+          {
+            "type": "paragraph",
+            "width": "full",
+            "label": "NOTE: Submitting this form will populate a PDF version of the W-9 form and send it to you by email for electronic signature, read the certification instructions on page 4 of the W-9"
+          },
+          { "type": "email",
+          "label": "Your email address"}
+        ]
+      },
+      {
+        "type": "submit",
+        "label": "Submit"
+      }
+    ]
+  }
+}
