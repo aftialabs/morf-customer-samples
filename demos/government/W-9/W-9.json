@@ -1,7 +1,8 @@
 {
   "config": {
     "siteKey": "8949362dc63e4315a72cc9f10239acd3",
-    "successUrl": "http://getmorf.io/"
+    "successUrl": "http://getmorf.io/",
+    "submit": "https://prod-19.canadacentral.logic.azure.com:443/workflows/573afdf46f2347e98587238d3013ab62/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=cuAhwsrSsjrOMoWuR5oeO7zslJpjHLvfckHXf8nd7YE"
   },
   "head": {
     "title": "W-9 Request for Taxpayer Identification Number and Certification",
@@ -85,15 +86,15 @@
             "options": [
               {
                 "label": "C=Corporation",
-                "value": "LLC_sub.c"
+                "value": "C"
               },
               {
                 "label": "S=S Corporation",
-                "value": "LLC_sub.s"
+                "value": "S"
               },
               {
                 "label": "P=Partnership",
-                "value": "LLC_sub.p"
+                "value": "P"
               }
             ]
           }
@@ -113,6 +114,7 @@
           {
             "type": "dropdown",
             "width": "full",
+            "bind": "exempt_code",
             "options": [
               {
                 "label": "1 - An organization exempt from tax under section 501(a), any IRA, or a custodial account under section 403(b)(7) if the account satisfies the requirements of section 401(f)(2)",
@@ -171,8 +173,8 @@
           {
             "type": "dropdown",
             "label": "Exemption from FATCA reporting code (if any)",
-            "bind": "exmempt_payee_code",
-            "width": "half",
+            "bind": "fatca_code",
+            "width": "full",
             "options": [
               {
                 "label": "A—An organization exempt from tax under section 501(a) or any individual retirement plan as defined in section 7701(a)(37)",
@@ -238,7 +240,7 @@
           {
             "type": "text",
             "label": "Address (number, street, and apt. or suite no.)",
-            "bind": "address"
+            "bind": "street_address"
           },
           {
             "type": "text",
@@ -272,10 +274,10 @@
             "width": "half",
             "bind": "ssn",
             "regex": "^\\d{3}-\\d{2}-\\d{4}$",
-            "placeholder": "e.g. 030 72 7381"
+            "placeholder": "e.g. 030-72-7381"
           },
           {
-            "type": "number",
+            "type": "text",
             "label": "Employee Identification Number",
             "width": "half",
             "bind": "ein",
@@ -287,25 +289,27 @@
             "label": "Enter your TIN in the appropriate box. The TIN provided must match the name given above to avoid backup withholding. For individuals, this is generally your social security number (SSN). However, for a resident alien, sole proprietor, or disregarded entity, see the instructions for Part I, later. For other entities, it is your employer identification number (EIN). If you do not have a number, see How to get a TIN, later."
           },
           {
-          "type" :"paragraph",
-          "width": "full",
-          "label": "Note: If the account is in more than one name, see the instructions for line 1. Also see What Name and Number To Give the Requester for guidelines on whose number to enter."
+            "type": "paragraph",
+            "width": "full",
+            "label": "Note: If the account is in more than one name, see the instructions for line 1. Also see What Name and Number To Give the Requester for guidelines on whose number to enter."
           }
         ]
       },
-            {
+      {
         "type": "panel",
         "width": "full",
         "label": "Certification",
         "items": [
-
           {
             "type": "paragraph",
             "width": "full",
             "label": "NOTE: Submitting this form will populate a PDF version of the W-9 form and send it to you by email for electronic signature, read the certification instructions on page 4 of the W-9"
           },
-          { "type": "email",
-          "label": "Your email address"}
+          {
+            "type": "email",
+            "bind": "email",
+            "label": "Your email address"
+          }
         ]
       },
       {
