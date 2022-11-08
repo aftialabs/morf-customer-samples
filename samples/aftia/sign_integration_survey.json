@@ -4,7 +4,7 @@
     "successUrl": "https://www.getmorf.io/",
     "theme": "",
     "externalId": "",
-    "siteKey": "ad702064b01c41a88c0946b0ea250ce2"
+    "siteKey": "123"
   },
   "head": {
     "title": "Requested Acrobat Sign Integrations",
@@ -29,8 +29,7 @@
       {
         "type": "panel",
         "width": "full",
-        "bind" : "response",
-        "name": "response_section",
+        "name": "response",
         "label": "Please provide information about customer requested Acrobat Sign integrations that are not supported (or have insufficient support to meet customer needs)",
         "min": 1,
         "items": [
@@ -38,7 +37,7 @@
             "type": "text",
             "label": "Requested integration",
             "placeholder": "e.g. Greenhouse recruiting",
-            "bind": "integration",
+            "name": "integration",
             "width": "full",
             "required": true
           },
@@ -47,7 +46,7 @@
             "label": "Customer Name",
             "width": "full",
             "placeholder": "e.g. Acme Inc.",
-            "bind": "customer",
+            "name": "customer",
             "required": false
           },
           {
@@ -55,7 +54,7 @@
             "label": "Use Case / Integration Details",
             "width": "full",
             "placeholder": "e.g. There is no integration between Sign and Greenhouse.  This is a key capability need to migrate from DocuSign.",
-            "bind": "usecase",
+            "name": "usecase",
             "required": false
           }
         ]
