@@ -2,7 +2,7 @@
     "config": {
       "submit": "https://prod2-14.canadacentral.logic.azure.com:443/workflows/ef980f30c58d4ded950c3d354ec7b4e1/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=09ZZouvVLm1xDP8v5JXGpKeJZ2-fZ2m5esx6MghMr_g",
       "siteKey": "f2b7864515aa4d52bda041cdaf448ec8",
-      "successUrl": "https://www.aftia.com/"
+      "successUrl": "https://www.getmorf.io/"
     },
     "head": {
       "title": "Employment Eligibility Verification Department of Homeland Security USCIS Form I-9",
