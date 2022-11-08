@@ -5,8 +5,8 @@
     "successUrl": "https://www.getmorf.io/"
   },
   "head": {
-    "title": "Registration Form",
-    "logo": "https://uploads-ssl.webflow.com/5e0e0d786de93874eb27e0c1/5e138d756b2f0315a9133ee5_AFTIA%20Logo%20Color.svg"
+    "title": "Student Registration",
+    "logo": "https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
   },
   "body": {
     "items": [
