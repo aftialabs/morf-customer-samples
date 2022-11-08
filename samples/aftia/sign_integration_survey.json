@@ -29,6 +29,8 @@
       {
         "type": "panel",
         "width": "full",
+        "bind" : "response",
+        "name": "response_section",
         "label": "Please provide information about customer requested Acrobat Sign integrations that are not supported (or have insufficient support to meet customer needs)",
         "min": 1,
         "items": [
