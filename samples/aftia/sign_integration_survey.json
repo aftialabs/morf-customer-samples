@@ -1,0 +1,65 @@
+{
+  "config": {
+    "submit": "",
+    "successUrl": "",
+    "theme": "",
+    "externalId": "",
+    "siteKey": "8949362dc63e4315a72cc9f10239acd3"
+  },
+  "head": {
+    "title": "Requested Acrobat Sign Integrations",
+    "logo": "https://uploads-ssl.webflow.com/61e714dee6e03a006b829c3a/621cf6cde8ae4f61b08896b4_MORF%20Logo.svg"
+  },
+  "body": {
+    "items": [
+      {
+        "type": "text",
+        "label": "Your first name",
+        "placeholder": "E.g. Jane",
+        "required": true
+      },
+      {
+        "type": "text",
+        "label": "Your last name",
+        "placeholder": "E.g. Doe",
+        "required": true
+      },
+      {
+        "type": "panel",
+        "width": "full",
+        "label": "Please provide information about customer requested Acrobat Sign integrations that are not supported (or have insufficient support to meet customer needs)",
+        "min": 1,
+        "items": [
+          {
+            "type": "text",
+            "label": "Requested integration",
+            "placeholder": "e.g. Greenhouse recruiting",
+            "bind": "",
+            "width": "full",
+            "required": true
+          },
+          {
+            "type": "text",
+            "label": "Customer Name",
+            "width": "full",
+            "placeholder": "e.g. Acme Inc.",
+            "bind": "",
+            "required": false
+          },
+          {
+            "type": "textarea",
+            "label": "Use Case / Integration Details",
+            "width": "full",
+            "placeholder": "e.g. There is no integration between Sign and Greenhouse.  This is a key capability need to migrate from DocuSign.",
+            "bind": "",
+            "required": false
+          }
+        ]
+      },
+      {
+        "type": "submit",
+        "label": "Submit"
+      }
+    ]
+  }
+}
