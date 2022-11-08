@@ -1,0 +1,49 @@
+{
+    "config": {
+      "siteKey": "f2b7864515aa4d52bda041cdaf448ec8",
+      "successUrl": "https://getmorf.io/",
+      "submit": ""
+    },
+    "head": {
+      "title": "W-4 Employee's Withholding Certificate",
+      "logo": "https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
+    },
+    "body": {
+      "items": [
+        {
+            "type": "paragraph",
+            "width": "full",
+            "label": "Go to www.irs.gov/FormW4 for instructions and the latest information."
+        },
+        {
+          "type": "text",
+          "label": "Name of individual who is the beneficial owner",
+          "bind": "name",
+          "placeholder": "e.g. Jane Doe",
+          "required": true,
+          "width": "full"
+        },
+        {
+          "type": "panel",
+          "width": "full",
+          "label": "Certification",
+          "items": [
+            {
+              "type": "paragraph",
+              "width": "full",
+              "label": "NOTE: Submitting this form will populate a PDF version of the W-4 form and send it to you by email for electronic signature, read the certification instructions in W-8"
+            },
+            {
+              "type": "email",
+              "bind": "email",
+              "label": "Your email address"
+            }
+          ]
+        },
+        {
+          "type": "submit",
+          "label": "Submit"
+        }
+      ]
+    }
+  }
