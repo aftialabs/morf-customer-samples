@@ -30,7 +30,7 @@
         "type": "panel",
         "width": "full",
         "name": "response",
-        "label": "Please provide information about customer requested Acrobat Sign integrations that are not supported (or have insufficient support to meet customer needs)",
+        "label": "Please provide information about customer requested Acrobat Sign integrations that are not supported (or have insufficient support to meet customer needs). Click the plus sign to add more responses.",
         "min": 1,
         "items": [
           {
