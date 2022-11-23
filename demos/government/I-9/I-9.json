@@ -92,7 +92,6 @@
                 "label": "State",
                 "bind": "employee.state",
                 "width": "quarter",
-                "default": " ",
                 "options": [
                       {
                         "label": " ",
@@ -542,7 +541,6 @@
                 "bind": "employee.ptc.state",
                 "width": "quarter",
                 "required": false,
-                "default": " ",
                 "options": [
                       {
                         "label": " ",
@@ -803,7 +801,6 @@
           "type": "panel",
           "label": "Section 2. Employer or Authorized Representative Review and Verification",
           "width": "full",
-          "value": " ",
           "bind": "employee",
           "items": [
             {
@@ -1082,7 +1079,6 @@
                       "label": "State",
                       "bind": "employer.info.state",
                       "width": "quarter",
-                      "default": " ",
                       "required": false,
                       "options": [
                             {
