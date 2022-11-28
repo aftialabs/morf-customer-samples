@@ -3,6 +3,8 @@
 
 A repository containing sample MORF forms used for demonstration purposes. Generic industry specific samples can be found under the `/demos` folder along with presentation instructions.
 
+This preview page injects its own `siteKey` meaning that new form definitions may leave their `siteKey` blank.  
+
 ## Add a sample
 
 1. To add a new sample, start by heading over to http://editor.getmorf.io/ to create a new Morf form

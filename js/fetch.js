@@ -15,7 +15,7 @@ if (formRef){
         if (this.status == 200) {
             const form = JSON.parse(this.responseText);
             window.morfConfig = {
-                siteKey: form.config.siteKey,
+                siteKey: 'ad702064b01c41a88c0946b0ea250ce2',
                 targetSelector: '#morfcontent',
                 definition: form
             };
