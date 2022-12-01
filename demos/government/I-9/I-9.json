@@ -1,6 +1,6 @@
 {
     "config": {
-      "submit": "https://prod2-14.canadacentral.logic.azure.com:443/workflows/ef980f30c58d4ded950c3d354ec7b4e1/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=09ZZouvVLm1xDP8v5JXGpKeJZ2-fZ2m5esx6MghMr_g",
+      "submit": "https://prod-21.canadacentral.logic.azure.com:443/workflows/c78f501120c34d2c92d1b7ba76e58e2f/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=oL6bpUjrXpH6teJoygAwMAUHb7N4c85Qr8_WiclHgiU",
       "siteKey": "f2b7864515aa4d52bda041cdaf448ec8",
       "successUrl": "https://www.getmorf.io/"
     },
@@ -1437,11 +1437,6 @@
               "required": false
             }
           ]
-        },
-        {
-          "type": "hidden",
-          "bind": "userId",
-          "value": " "
         },
         {
           "type": "submit",
