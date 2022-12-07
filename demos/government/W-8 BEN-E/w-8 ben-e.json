@@ -1,0 +1,427 @@
+{
+    "config": {
+      "siteKey": "f2b7864515aa4d52bda041cdaf448ec8",
+      "successUrl": "https://getmorf.io/",
+      "submit": ""
+    },
+    "head": {
+      "title": "W-8BEN-E Certificate of Status of Beneficial Owner for United States Tax Withholding and Reporting (Entities)",
+      "logo": "https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
+    },
+    "body": {
+      "items": [
+        {
+          "type": "paragraph",
+          "width": "full",
+          "label": "Go to www.irs.gov/FormW8 for instructions and the latest information. For full PDF version, go to https://www.irs.gov/pub/irs-pdf/fw8bene.pdf"
+        },
+        {
+          "type": "panel",
+          "width": "full",
+          "label": "Part I - Identification of Beneficial Owner",
+          "items": [
+            {
+              "type": "text",
+              "width": "half",
+              "label": "1. Name of organization that is the beneficial owner",
+              "bind": "part1.1name"
+            },
+            {
+              "type": "text",
+              "width": "half",
+              "label": "2. Country of incorporation or organization",
+              "bind": "part1.2country"
+            },
+            {
+              "type": "text",
+              "width": "full",
+              "label": "3. Name of disregarded entity receiving the payment (if applicable, see instructions)",
+              "bind": "part1.3nameDisregardedEntity"
+            },
+            {
+              "type": "radio",
+              "width": "half",
+              "label": "4. Chapter 3 Status (entity type) (Must check one box only):",
+              "bind": "part1.4aEntityType",
+              "options": [
+                {
+                  "label": "Corporation",
+                  "value": "Corporation"
+                },
+                {
+                  "label": "Partnership",
+                  "value": "Partnership"
+                },
+                {
+                  "label": "Simple trust",
+                  "value": "Simple trust"
+                },
+                {
+                  "label": "Tax-exempt organization",
+                  "value": "Tax-exempt organization"
+                },
+                {
+                  "label": "Complex trust",
+                  "value": "Complex trust"
+                },
+                {
+                  "label": "Foreign Government - Controlled Entity",
+                  "value": "Foreign Government - Controlled Entity"
+                },
+                {
+                  "label": "Central Bank of Issue",
+                  "value": "Central Bank of Issue"
+                },
+                {
+                  "label": "Private foundation",
+                  "value": "Private foundation"
+                },
+                {
+                  "label": "Estate",
+                  "value": "Estate"
+                },
+                {
+                  "label": "Foreign Government - Integral Part",
+                  "value": "Foreign Government - Integral Part"
+                },
+                {
+                  "label": "Grantor trust",
+                  "value": "Grantor trust"
+                },
+                {
+                  "label": "Disregarded entity",
+                  "value": "Disregarded entity"
+                },
+                {
+                  "label": "International organization",
+                  "value": "International organization"
+                }
+              ]
+            },
+            {
+              "type": "radio",
+              "width": "half",
+              "label": "If you entered disregarded entity, partnership, simple trust, or grantor trust above, is the entity a hybrid making a treaty claim? If “Yes,” complete Part III.",
+              "bind": "part1.4b",
+              "options": [
+                {
+                  "label": "Yes",
+                  "value": "Yes"
+                },
+                {
+                  "label": "No",
+                  "value": "No"
+                }
+              ]
+            },
+            {
+              "type": "checkbox",
+              "width": "full",
+              "label": "5. Chapter 4 Status (FATCA status) (See instructions for details and complete the certification below for the entity's applicable status.)",
+              "bind": "part1.5",
+              "options": [
+                {
+                  "label": "Nonparticipating FFI (including an FFI related to a Reporting IGA FFI other than a deemed-compliant FFI, participating FFI, or exempt beneficial owner).",
+                  "value": "Nonparticipating FFI (including an FFI related to a Reporting IGA FFI other than a deemed-compliant FFI, participating FFI, or exempt beneficial owner)."
+                },
+                {
+                  "label": "Nonreporting IGA FFI. Complete Part XII.",
+                  "value": "Nonreporting IGA FFI. Complete Part XII."
+                },
+                {
+                  "label": "Foreign government, government of a U.S. possession, or foreign central bank of issue. Complete Part XIII.",
+                  "value": "Foreign government, government of a U.S. possession, or foreign central bank of issue. Complete Part XIII."
+                },
+                {
+                  "label": "Participating FFI.",
+                  "value": "Participating FFI."
+                },
+                {
+                  "label": "International organization. Complete Part XIV.",
+                  "value": "International organization. Complete Part XIV."
+                },
+                {
+                  "label": "Reporting Model 1 FFI.",
+                  "value": "Reporting Model 1 FFI."
+                },
+                {
+                  "label": "Reporting Model 2 FFI.",
+                  "value": "Reporting Model 2 FFI."
+                },
+                {
+                  "label": "Exempt retirement plans. Complete Part XV.",
+                  "value": "Exempt retirement plans. Complete Part XV."
+                },
+                {
+                  "label": "Entity wholly owned by exempt beneficial owners. Complete Part XVI.",
+                  "value": "Entity wholly owned by exempt beneficial owners. Complete Part XVI."
+                },
+                {
+                  "label": "Registered deemed-compliant FFI (other than a reporting Model 1 FFI, sponsored FFI, or nonreporting IGA FFI covered in Part XII). See instructions.",
+                  "value": "Registered deemed-compliant FFI (other than a reporting Model 1 FFI, sponsored FFI, or nonreporting IGA FFI covered in Part XII). See instructions."
+                },
+                {
+                  "label": "Territory financial institution. Complete Part XVII.",
+                  "value": "Territory financial institution. Complete Part XVII."
+                },
+                {
+                  "label": "Excepted nonfinancial group entity. Complete Part XVIII.",
+                  "value": "Excepted nonfinancial group entity. Complete Part XVIII."
+                },
+                {
+                  "label": "Excepted nonfinancial start-up company. Complete Part XIX.",
+                  "value": "Excepted nonfinancial start-up company. Complete Part XIX."
+                },
+                {
+                  "label": "Excepted nonfinancial entity in liquidation or bankruptcy. Complete Part XX.",
+                  "value": "Excepted nonfinancial entity in liquidation or bankruptcy. Complete Part XX."
+                },
+                {
+                  "label": "Sponsored FFI. Complete Part IV.",
+                  "value": "Sponsored FFI. Complete Part IV."
+                },
+                {
+                  "label": "Certified deemed-compliant nonregistering local bank. Complete Part V.",
+                  "value": "Certified deemed-compliant nonregistering local bank. Complete Part V."
+                },
+                {
+                  "label": "501(c) organization. Complete Part XXI.",
+                  "value": "501(c) organization. Complete Part XXI."
+                },
+                {
+                  "label": "Certified deemed-compliant FFI with only low-value accounts. Complete Part VI.",
+                  "value": "Certified deemed-compliant FFI with only low-value accounts. Complete Part VI."
+                },
+                {
+                  "label": "Nonprofit organization. Complete Part XXII.",
+                  "value": "Nonprofit organization. Complete Part XXII."
+                },
+                {
+                  "label": "Certified deemed-compliant sponsored, closely held investment vehicle. Complete Part VII.",
+                  "value": "Certified deemed-compliant sponsored, closely held investment vehicle. Complete Part VII."
+                },
+                {
+                  "label": "Publicly traded NFFE or NFFE affiliate of a publicly traded corporation. Complete Part XXIII.",
+                  "value": "Publicly traded NFFE or NFFE affiliate of a publicly traded corporation. Complete Part XXIII."
+                },
+                {
+                  "label": "Certified deemed-compliant limited life debt investment entity. Complete Part VIII.",
+                  "value": "Certified deemed-compliant limited life debt investment entity. Complete Part VIII."
+                },
+                {
+                  "label": "Excepted territory NFFE. Complete Part XXIV.",
+                  "value": "Excepted territory NFFE. Complete Part XXIV."
+                },
+                {
+                  "label": "Active NFFE. Complete Part XXV.",
+                  "value": "Active NFFE. Complete Part XXV."
+                },
+                {
+                  "label": "Certain investment entities that do not maintain financial accounts. Complete Part IX.",
+                  "value": "Certain investment entities that do not maintain financial accounts. Complete Part IX."
+                },
+                {
+                  "label": "Passive NFFE. Complete Part XXVI.",
+                  "value": "Passive NFFE. Complete Part XXVI."
+                },
+                {
+                  "label": "Excepted inter-affiliate FFI. Complete Part XXVII.",
+                  "value": "Excepted inter-affiliate FFI. Complete Part XXVII."
+                },
+                {
+                  "label": "Owner-documented FFI. Complete Part X.",
+                  "value": "Owner-documented FFI. Complete Part X."
+                },
+                {
+                  "label": "Direct reporting NFFE.",
+                  "value": "Direct reporting NFFE."
+                },
+                {
+                  "label": "Sponsored direct reporting NFFE. Complete Part XXVIII.",
+                  "value": "Sponsored direct reporting NFFE. Complete Part XXVIII."
+                },
+                {
+                  "label": "Restricted distributor. Complete Part XI.",
+                  "value": "Restricted distributor. Complete Part XI."
+                },
+                {
+                  "label": "Account that is not a financial account.",
+                  "value": "Account that is not a financial account."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "width": "full",
+              "label": "6. Permanent residence address (street, apt. or suite no., or rural route). Do not use a P.O. box or in-care-of address (other than a registered address).",
+              "bind": "part1.6address"
+            },
+            {
+              "type": "text",
+              "width": "half",
+              "label": "City or town, state or province. Include postal code where appropriate.",
+              "bind": "part1.6city"
+            },
+            {
+              "type": "text",
+              "width": "half",
+              "label": "Country",
+              "bind": "part1.6country"
+            },
+            {
+              "type": "text",
+              "width": "full",
+              "label": "7. Mailing address (if different from above)",
+              "bind": "part1.7mailingAddress",
+              "required": false
+            },
+            {
+              "type": "text",
+              "width": "half",
+              "label": "City or town, state or province. Include postal code where appropriate.",
+              "bind": "part1.7city"
+            },
+            {
+              "type": "text",
+              "width": "half",
+              "label": "Country",
+              "bind": "part1.7country"
+            },
+            {
+              "type": "text",
+              "width": "full",
+              "label": "8. U.S. taxpayer identification number (TIN), if required",
+              "bind": "part1.8TIN",
+              "required": false
+            },
+            {
+              "type": "text",
+              "width": "quarter",
+              "label": "9a. GIIN",
+              "bind": "part1.9a",
+              "required": false
+            },
+            {
+              "type": "text",
+              "width": "quarter",
+              "label": "9b. Foreign TIN",
+              "bind": "part1.9a",
+              "required": false
+            },
+            {
+              "type": "checkbox",
+              "width": "half",
+              "label": "9c. Check if FTIN not legally required",
+              "bind": "part1.9c",
+              "required": false,
+              "options": [
+                {
+                  "value": "FTIN not legally required",
+                  "label": "FTIN not legally required"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "width": "half",
+              "label": "10. Reference number(s) (see instructions)",
+              "bind": "part1.10refNum",
+              "required": false
+            }
+          ]
+        },
+        {
+          "type": "panel",
+          "width": "full",
+          "label": "Part II - Disregarded Entity or Branch Receiving Payment. (Complete only if a disregarded entity with a GIIN or a branch of an FFI in a country other than the FFI’s country of residence. See instructions.)",
+          "items": [
+            {
+              "type": "checkbox",
+              "width": "half",
+              "label": "11. Chapter 4 Status (FATCA status) of disregarded entity or branch receiving payment",
+              "bind": "part2.11FATCAStatus",
+              "options": [
+                {
+                  "label": "Branch treated as nonparticipating FFI.",
+                  "value": "Branch treated as nonparticipating FFI."
+                },
+                {
+                  "label": "Reporting Model 1 FFI.",
+                  "value": "Reporting Model 1 FFI."
+                },
+                {
+                  "label": "U.S. Branch.",
+                  "value": "U.S. Branch."
+                },
+                {
+                  "label": "Participating FFI.",
+                  "value": "Participating FFI."
+                },
+                {
+                  "label": "Reporting Model 2 FFI.",
+                  "value": "Reporting Model 2 FFI."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "width": "full",
+              "label": "12. Address of disregarded entity or branch (street, apt. or suite no., or rural route). Do not use a P.O. box or in-care-of address (other than a registered address).",
+              "bind": "part2.12address"
+            },
+            {
+              "type": "text",
+              "width": "half",
+              "label": "City or town, state or province. Include postal code where appropriate.",
+              "bind": "part2.12city"
+            },
+            {
+              "type": "text",
+              "width": "half",
+              "label": "Country",
+              "bind": "part2.12country"
+            },
+            {
+              "type": "text",
+              "width": "full",
+              "label": "13. GIIN (if any)",
+              "bind": "part2.13GIIN",
+              "required": false
+            }
+          ]
+        },
+        {
+          "type": "panel",
+          "width": "full",
+          "label": "Part III - Certification and Electronic Signature",
+          "items": [
+            {
+              "type": "paragraph",
+              "width": "full",
+              "label": "NOTE: Submitting this form will populate a PDF version of the W-8 BEN form and send it to you by email for electronic signature, read the certification instructions in W-8 by visiting www.irs.gov/FormW8"
+            },
+            {
+              "type": "checkbox",
+              "width": "half",
+              "bind": "part3.certificationCheckbox",
+              "options": [
+                {
+                  "value": "I certify that I have the capacity to sign for the person identified on line 1 of this form.",
+                  "label": "I certify that I have the capacity to sign for the person identified on line 1 of this form." 
+                }
+              ]
+            },
+            {
+              "type": "email",
+              "bind": "part3.email",
+              "label": "Your email address"
+            }
+          ]
+        },
+        {
+          "type": "submit",
+          "label": "Submit"
+        }
+      ]
+    }
+  }
