@@ -115,14 +115,14 @@
               ]
             },
             {
-              "type": "checkbox",
+              "type": "radio",
               "width": "full",
               "label": "5. Chapter 4 Status (FATCA status) (See instructions for details and complete the certification below for the entity's applicable status.)",
               "bind": "part1.5",
               "options": [
                 {
                   "label": "Nonparticipating FFI (including an FFI related to a Reporting IGA FFI other than a deemed-compliant FFI, participating FFI, or exempt beneficial owner).",
-                  "value": "Nonparticipating FFI (including an FFI related to a Reporting IGA FFI other than a deemed-compliant FFI, participating FFI, or exempt beneficial owner)."
+                  "value": "Nonparticipating FFI."
                 },
                 {
                   "label": "Nonreporting IGA FFI. Complete Part XII.",
@@ -326,7 +326,8 @@
               "width": "half",
               "label": "10. Reference number(s) (see instructions)",
               "bind": "part1.10refNum",
-              "required": false
+              "required": false,
+              "description": "Note: Please complete remainder of the form including signing the form in Part XXX."
             }
           ]
         },
@@ -393,7 +394,1073 @@
         {
           "type": "panel",
           "width": "full",
-          "label": "Part III - Certification and Electronic Signature",
+          "label": "Part III - Claim of Tax Treaty Benefits (if applicable). (For chapter 3 purposes only.)",
+          "items": [
+            {
+              "type": "checkbox",
+              "width": "full",
+              "label": "14. I certify that (check all that apply):",
+              "bind": "part3.14a",
+              "required": false,
+              "options": [
+                {
+                  "label": "a. The beneficial owner is a resident of the country, entered below, within the meaning of the income tax treaty between the United States and that country.",
+                  "value": "Beneficial owner is a resident of a country within the meaning of the income tax treaty between the United States and that country."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "label": "Enter Country from 14a.",
+              "width": "half",
+              "bind": "part3.14aCountry",
+              "required": false
+            },
+            {
+              "type": "checkbox",
+              "width": "full",
+              "bind": "part3.14b",
+              "required": false,
+              "options": [
+                {
+                  "label": "b. The beneficial owner derives the item (or items) of income for which the treaty benefits are claimed, and, if applicable, meets the requirements of the treaty provision dealing with limitation on benefits. The following are types of limitation on benefits provisions that may be included in an applicable tax treaty (check only one; see instructions):",
+                  "value": "14b"
+                }
+              ]
+            },
+            {
+              "type": "radio",
+              "width": "full",
+              "bind": "part3.14bRadio",
+              "required": false,
+              "options": [
+                {
+                  "label": "Government",
+                  "value": "Government"
+                },
+                {
+                  "label": "Tax-exempt pension trust or pension fund",
+                  "value": "Tax-exempt pension trust or pension fund"
+                },
+                {
+                  "label": "Other tax-exempt organization",
+                  "value": "Other tax-exempt organization"
+                },
+                {
+                  "label": "Publicly traded corporation",
+                  "value": "Publicly traded corporation"
+                },
+                {
+                  "label": "Subsidiary of a publicly traded corporation",
+                  "value": "Subsidiary of a publicly traded corporation"
+                },
+                {
+                  "label": "Company that meets the ownership and base erosion test",
+                  "value": "Company that meets the ownership and base erosion test"
+                },
+                {
+                  "label": "Company that meets the derivative benefits test",
+                  "value": "Company that meets the derivative benefits test"
+                },
+                {
+                  "label": "Company with an item of income that meets active trade or business test",
+                  "value": "Company with an item of income that meets active trade or business test"
+                },
+                {
+                  "label": "Favorable discretionary determination by the U.S. competent authority received",
+                  "value": "Favorable discretionary determination by the U.S. competent authority received"
+                },
+                {
+                  "label": "No LOB article in treaty",
+                  "value": "No LOB article in treaty"
+                },
+                {
+                  "label": "Other (specify Article and paragraph):",
+                  "value": "Other"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "width": "full",
+              "label": "Other (specify Article and paragraph):",
+              "bind": "part3.14bOther",
+              "required": false
+            },
+            {
+              "type": "checkbox",
+              "width": "full",
+              "bind": "part3.14c",
+              "required": false,
+              "options": [
+                {
+                  "value": "The beneficial owner is claiming treaty benefits for U.S. source dividends received from a foreign corporation or interest from a U.S. trade or business of a foreign corporation and meets qualified resident status (see instructions).",
+                  "label": "The beneficial owner is claiming treaty benefits for U.S. source dividends received from a foreign corporation or interest from a U.S. trade or business of a foreign corporation and meets qualified resident status." 
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "label": "15. Special rates and conditions (if applicable—see instructions):",
+              "width": "full"
+            },
+            {
+              "type": "text",
+              "bind": "part3.15a",
+              "label": " a. The beneficial owner is claiming the provisions of Article and paragraph",
+              "width": "full",
+              "required": false
+            },
+            {
+              "type": "text",
+              "bind": "part3.15b",
+              "label": "b. Of the treaty identified on line 14a above to claim a",
+              "width": "half",
+              "required": false,
+              "description": "%"
+            },
+            {
+              "type": "text",
+              "bind": "part3.15c",
+              "label": "c. Rate of withholding on (specify type of income):",
+              "width": "half",
+              "required": false
+            },
+            {
+              "type": "textarea",
+              "bind": "part3.15d",
+              "label": "d. Explain the additional conditions in the Article the beneficial owner meets to be eligible for the rate of withholding:",
+              "width": "full",
+              "required": false
+            }
+          ]
+        },
+        {
+          "type": "panel",
+          "label": "Part IV - Sponsored FFI",
+          "width": "full",
+          "items": [
+            {
+              "type": "text",
+              "width": "full",
+              "label": "16. Name of sponsoring entity:",
+              "bind": "part4.16SponsoringEntityName",
+              "required": false
+            },
+            {
+              "type": "checkbox",
+              "required": false,
+              "width": "full",
+              "bind": "part4.17aCheckbox",
+              "label": "17. Check whichever box applies.",
+              "options": [
+                {
+                  "label": "I certify that the entity identified in Part I:",
+                  "value": "17a"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "width": "full",
+              "label": "• Is an investment entity;"
+            },
+            {
+              "type": "paragraph",
+              "width": "full",
+              "label": "• Is not a QI, WP (except to the extent permitted in the withholding foreign partnership agreement), or WT; and"
+            },
+            {
+              "type": "paragraph",
+              "width": "full",
+              "label": "• Has agreed with the entity identified above (that is not a nonparticipating FFI) to act as the sponsoring entity for this entity."
+            },
+            {
+              "type": "checkbox",
+              "required": false,
+              "width": "full",
+              "bind": "part4.17bCheckbox",
+              "options": [
+                {
+                  "label": "I certify that the entity identified in Part I:",
+                  "value": "17b"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "width": "full",
+              "label": "• Is a controlled foreign corporation as defined in section 957(a);"
+            },
+            {
+              "type": "paragraph",
+              "width": "full",
+              "label": "• Is not a QI, WP, or WT;"
+            },
+            {
+              "type": "paragraph",
+              "width": "full",
+              "label": "• Is wholly owned, directly or indirectly, by the U.S. financial institution identified above that agrees to act as the sponsoring entity for this entity; and"
+            },
+            {
+              "type": "paragraph",
+              "width": "full",
+              "label": "• Shares a common electronic account system with the sponsoring entity (identified above) that enables the sponsoring entity to identify all account holders and payees of the entity and to access all account and customer information maintained by the entity including, but not limited to, customer identification information, customer documentation, account balance, and all payments made to account holders or payees."
+            }
+          ]
+        },
+        {
+          "type": "panel",
+          "width": "full",
+          "label": "Part V - Certified Deemed-Compliant Nonregistering Local Bank",
+          "items": [
+            {
+              "type": "checkbox",
+              "width": "half",
+              "bind": "part5.18",
+              "required": false,
+              "options": [
+                {
+                  "label": "I certify that the FFI identified in Part I:",
+                  "value": "Certified Deemed-Compliant Nonregistering Local Bank"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "width": "full",
+              "label": "• Operates and is licensed solely as a bank or credit union (or similar cooperative credit organization operated without profit) in its country of incorporation or organization;"
+            },
+            {
+              "type": "paragraph",
+              "width": "full",
+              "label": "• Engages primarily in the business of receiving deposits from and making loans to, with respect to a bank, retail customers unrelated to such bank and, with respect to a credit union or similar cooperative credit organization, members, provided that no member has a greater than 5% interest in such credit union or cooperative credit organization;"
+            },
+            {
+              "type": "paragraph",
+              "width": "full",
+              "label": "• Does not solicit account holders outside its country of organization;"
+            },
+            {
+              "type": "paragraph",
+              "width": "full",
+              "label": "• Has no fixed place of business outside such country (for this purpose, a fixed place of business does not include a location that is not advertised to the public and from which the FFI performs solely administrative support functions);"
+            },
+            {
+              "type": "paragraph",
+              "width": "full",
+              "label": "• Has no more than $175 million in assets on its balance sheet and, if it is a member of an expanded affiliated group, the group has no more than $500 million in total assets on its consolidated or combined balance sheets; and"
+            },
+            {
+              "type": "paragraph",
+              "width": "full",
+              "label": "• Does not have any member of its expanded affiliated group that is a foreign financial institution, other than a foreign financial institution that is incorporated or organized in the same country as the FFI identified in Part I and that meets the requirements set forth in this part."
+            }
+          ]
+        },
+        {
+          "type": "panel",
+          "width": "full",
+          "label": "Part VI - Certified Deemed-Compliant FFI with Only Low-Value Accounts",
+          "items": [
+            {
+              "type": "checkbox",
+              "width": "full",
+              "bind": "part6.19",
+              "required": false,
+              "label": "19.",
+              "options": [
+                {
+                  "label": "I certify that the FFI identified in Part I:",
+                  "value": "Certified Deemed-Compliant FFI with Only Low-Value Accounts"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "width": "full",
+              "label": "• Is not engaged primarily in the business of investing, reinvesting, or trading in securities, partnership interests, commodities, notional principal contracts, insurance or annuity contracts, or any interest (including a futures or forward contract or option) in such security, partnership interest, commodity, notional principal contract, insurance contract or annuity contract;"
+            },
+            {
+              "type": "paragraph",
+              "width": "full",
+              "label": "• No financial account maintained by the FFI or any member of its expanded affiliated group, if any, has a balance or value in excess of $50,000 (as determined after applying applicable account aggregation rules); and"
+            },
+            {
+              "type": "paragraph",
+              "width": "full",
+              "label": "• Neither the FFI nor the entire expanded affiliated group, if any, of the FFI, have more than $50 million in assets on its consolidated or combined balance sheet as of the end of its most recent accounting year."
+            }
+          ]
+        },
+        {
+          "type": "panel",
+          "label": "Part VII - Certified Deemed-Compliant Sponsored, Closely Held Investment Vehicle",
+          "width": "full",
+          "items": [
+            {
+              "type": "text",
+              "width": "full",
+              "label": "20. Name of sponsoring entity:",
+              "bind": "part7.20SponsoringEntityName",
+              "required": false
+            },
+            {
+              "type": "checkbox",
+              "width": "full",
+              "bind": "part7.21",
+              "required": false,
+              "label": "21.",
+              "options": [
+                {
+                  "label": "I certify that the entity identified in Part I:",
+                  "value": "Certified Deemed-Compliant Sponsored, Closely Held Investment Vehicle"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "label": "• Is an FFI solely because it is an investment entity described in Regulations section 1.1471-5(e)(4);",
+              "width": "full"
+            },
+            {
+              "type": "paragraph",
+              "label": "• Is not a QI, WP, or WT;",
+              "width": "full"
+            },
+            {
+              "type": "paragraph",
+              "label": "• Will have all of its due diligence, withholding, and reporting responsibilities (determined as if the FFI were a participating FFI) fulfilled by the sponsoring entity identified on line 20; and",
+              "width": "full"
+            },
+            {
+              "type": "paragraph",
+              "label": "• 20 or fewer individuals own all of the debt and equity interests in the entity (disregarding debt interests owned by U.S. financial institutions, participating FFIs, registered deemed-compliant FFIs, and certified deemed-compliant FFIs and equity interests owned by an entity if that entity owns 100% of the equity interests in the FFI and is itself a sponsored FFI).",
+              "width": "full"
+            }
+          ]
+        },
+        {
+          "type": "panel",
+          "label": "Part VIII - Certified Deemed-Compliant Limited Life Debt Investment Entity",
+          "width": "full",
+          "items": [
+            {
+              "type": "checkbox",
+              "width": "full",
+              "bind": "part8.22",
+              "required": false,
+              "label": "22.",
+              "options": [
+                {
+                  "label": "I certify that the entity identified in Part I:",
+                  "value": "Certified Deemed-Compliant Limited Life Debt Investment Entity"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "width": "full",
+              "label": "• Was in existence as of January 17, 2013;"
+            },
+            {
+              "type": "paragraph",
+              "width": "full",
+              "label": "• Issued all classes of its debt or equity interests to investors on or before January 17, 2013, pursuant to a trust indenture or similar agreement; and"
+            },
+            {
+              "type": "paragraph",
+              "width": "full",
+              "label": "• Is certified deemed-compliant because it satisfies the requirements to be treated as a limited life debt investment entity (such as the restrictions with respect to its assets and other requirements under Regulations section 1.1471-5(f)(2)(iv))."
+            }
+          ]
+        },
+        {
+          "type": "panel",
+          "label": "Part IX - Certain Investment Entities that Do Not Maintain Financial Accounts",
+          "width": "full",
+          "items": [
+            {
+              "type": "checkbox",
+              "width": "full",
+              "bind": "part9.23",
+              "required": false,
+              "label": "23.",
+              "options": [
+                {
+                  "label": "I certify that the entity identified in Part I:",
+                  "value": "Certain Investment Entities that Do Not Maintain Financial Accounts"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "width": "full",
+              "label": "• Is a financial institution solely because it is an investment entity described in Regulations section 1.1471-5(e)(4)(i)(A), and"
+            },
+            {
+              "type": "paragraph",
+              "width": "full",
+              "label": "• Does not maintain financial accounts."
+            }
+          ]
+        },
+        {
+          "type": "panel",
+          "label": "Part X - Owner-Documented FFI",
+          "width": "full",
+          "items": [
+            {
+              "type": "paragraph",
+              "width": "full",
+              "label": "Note: This status only applies if the U.S. financial institution, participating FFI, or reporting Model 1 FFI to which this form is given has agreed that it will treat the FFI as an owner-documented FFI (see instructions for eligibility requirements). In addition, the FFI must make the certifications below."
+            },
+            {
+              "type": "checkbox",
+              "width": "full",
+              "bind": "part10.24a",
+              "required": false,
+              "label": "24 a.",
+              "options": [
+                {
+                  "label": "(All owner-documented FFIs check here) I certify that the FFI identified in Part I:",
+                  "value": "a"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "width": "full",
+              "label": "• Does not act as an intermediary;"
+            },
+            {
+              "type": "paragraph",
+              "width": "full",
+              "label": "• Does not accept deposits in the ordinary course of a banking or similar business;"
+            },
+            {
+              "type": "paragraph",
+              "width": "full",
+              "label": "• Does not hold, as a substantial portion of its business, financial assets for the account of others;"
+            },
+            {
+              "type": "paragraph",
+              "width": "full",
+              "label": "• Is not an insurance company (or the holding company of an insurance company) that issues or is obligated to make payments with respect to a financial account;"
+            },
+            {
+              "type": "paragraph",
+              "width": "full",
+              "label": "• Is not owned by or in an expanded affiliated group with an entity that accepts deposits in the ordinary course of a banking or similar business, holds, as a substantial portion of its business, financial assets for the account of others, or is an insurance company (or the holding company of an insurance company) that issues or is obligated to make payments with respect to a financial account;"
+            },
+            {
+              "type": "paragraph",
+              "width": "full",
+              "label": "• Does not maintain a financial account for any nonparticipating FFI; and"
+            },
+            {
+              "type": "paragraph",
+              "width": "full",
+              "label": "• Does not have any specified U.S. persons that own an equity interest or debt interest (other than a debt interest that is not a financial account or that has a balance or value not exceeding $50,000) in the FFI other than those identified on the FFI owner reporting statement."
+            },
+            {
+              "type": "checkbox",
+              "width": "full",
+              "bind": "part10.24b",
+              "required": false,
+              "label": "b.",
+              "options": [
+                {
+                  "label": "I certify that the FFI identified in Part I:",
+                  "value": "b"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "width": "full",
+              "label": "• Has provided, or will provide, an FFI owner reporting statement that contains:"
+            },
+            {
+              "type": "paragraph",
+              "width": "full",
+              "label": "(i) The name, address, TIN (if any), chapter 4 status, and type of documentation provided (if required) of every individual and specified U.S. person that owns a direct or indirect equity interest in the owner-documented FFI (looking through all entities other than specified U.S. persons);"
+            },
+            {
+              "type": "paragraph",
+              "width": "full",
+              "label": "(ii) The name, address, TIN (if any), and chapter 4 status of every individual and specified U.S. person that owns a debt interest in the owner-documented FFI (including any indirect debt interest, which includes debt interests in any entity that directly or indirectly owns the payee or any direct or indirect equity interest in a debt holder of the payee) that constitutes a financial account in excess of $50,000 (disregarding all such debt interests owned by participating FFIs, registered deemed-compliant FFIs, certified deemed-compliant FFIs, excepted NFFEs, exempt beneficial owners, or U.S. persons other than specified U.S. persons); and"
+            },
+            {
+              "type": "paragraph",
+              "width": "full",
+              "label": "(iii) Any additional information the withholding agent requests in order to fulfill its obligations with respect to the entity."
+            },
+            {
+              "type": "paragraph",
+              "width": "full",
+              "label": "• Has provided, or will provide, valid documentation meeting the requirements of Regulations section 1.1471-3(d)(6)(iii) for each person identified in the FFI owner reporting statement."
+            },
+            {
+              "type": "checkbox",
+              "width": "full",
+              "bind": "part10.24c",
+              "required": false,
+              "label": "c.",
+              "options": [
+                {
+                  "label": "I certify that the FFI identified in Part I has provided, or will provide, an auditor's letter, signed within 4 years of the date of payment, from an independent accounting firm or legal representative with a location in the United States stating that the firm or representative has reviewed the FFI’s documentation with respect to all of its owners and debt holders identified in Regulations section 1.1471-3(d)(6)(iv)(A)(2), and that the FFI meets all the requirements to be an owner-documented FFI. The FFI identified in Part I has also provided, or will provide, an FFI owner reporting statement of its owners that are specified U.S. persons and Form(s) W-9, with applicable waivers.",
+                  "value": "c"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "width": "full",
+              "label": "Check box 24d if applicable (optional, see instructions)."
+            },
+            {
+              "type": "checkbox",
+              "width": "full",
+              "bind": "part10.24d",
+              "required": false,
+              "label": "d.",
+              "options": [
+                {
+                  "label": "I certify that the entity identified on line 1 is a trust that does not have any contingent beneficiaries or designated classes with unidentified beneficiaries.",
+                  "value": "d"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "panel",
+          "label": "Part XI - Restricted Distributor",
+          "width": "full",
+          "items": [
+            {
+              "type": "checkbox",
+              "width": "full",
+              "bind": "part11.25a",
+              "required": false,
+              "label": "25 a.",
+              "options": [
+                {
+                  "label": "(All restricted distributors check here) I certify that the entity identified in Part I:",
+                  "value": "a"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "width": "full",
+              "label": "• Operates as a distributor with respect to debt or equity interests of the restricted fund with respect to which this form is furnished;"
+            },
+            {
+              "type": "paragraph",
+              "width": "full",
+              "label": "• Provides investment services to at least 30 customers unrelated to each other and less than half of its customers are related to each other;"
+            },
+            {
+              "type": "paragraph",
+              "width": "full",
+              "label": "• Is required to perform AML due diligence procedures under the anti-money laundering laws of its country of organization (which is an FATF-compliant jurisdiction);"
+            },
+            {
+              "type": "paragraph",
+              "width": "full",
+              "label": "• Operates solely in its country of incorporation or organization, has no fixed place of business outside of that country, and has the same country of incorporation or organization as all members of its affiliated group, if any;"
+            },
+            {
+              "type": "paragraph",
+              "width": "full",
+              "label": "• Does not solicit customers outside its country of incorporation or organization;"
+            },
+            {
+              "type": "paragraph",
+              "width": "full",
+              "label": "• Has no more than $175 million in total assets under management and no more than $7 million in gross revenue on its income statement for the most recent accounting year;"
+            },
+            {
+              "type": "paragraph",
+              "width": "full",
+              "label": "• Is not a member of an expanded affiliated group that has more than $500 million in total assets under management or more than $20 million in gross revenue for its most recent accounting year on a combined or consolidated income statement; and"
+            },
+            {
+              "type": "paragraph",
+              "width": "full",
+              "label": "• Does not distribute any debt or securities of the restricted fund to specified U.S. persons, passive NFFEs with one or more substantial U.S. owners, or nonparticipating FFIs."
+            },
+            {
+              "type": "paragraph",
+              "width": "full",
+              "label": "Check box 25b or 25c, whichever applies."
+            },
+            {
+              "type": "paragraph",
+              "width": "full",
+              "label": "I further certify that with respect to all sales of debt or equity interests in the restricted fund with respect to which this form is furnished that are made after December 31, 2011, the entity identified in Part I:"
+            },
+            {
+              "type": "checkbox",
+              "width": "full",
+              "bind": "part11.25bc",
+              "required": false,
+              "options": [
+                {
+                  "label": "b. Has been bound by a distribution agreement that contained a general prohibition on the sale of debt or securities to U.S. entities and U.S. resident individuals and is currently bound by a distribution agreement that contains a prohibition of the sale of debt or securities to any specified U.S. person, passive NFFE with one or more substantial U.S. owners, or nonparticipating FFI.",
+                  "value": "b"
+                },
+                {
+                  "label": "c. Is currently bound by a distribution agreement that contains a prohibition on the sale of debt or securities to any specified U.S. person, passive NFFE with one or more substantial U.S. owners, or nonparticipating FFI and, for all sales made prior to the time that such a restriction was included in its distribution agreement, has reviewed all accounts related to such sales in accordance with the procedures identified in Regulations section 1.1471-4(c) applicable to preexisting accounts and has redeemed or retired any, or caused the restricted fund to transfer the securities to a distributor that is a participating FFI or reporting Model 1 FFI securities which were sold to specified U.S. persons, passive NFFEs with one or more substantial U.S. owners, or nonparticipating FFIs.",
+                  "value": "c"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "panel",
+          "label": "Part XII - Nonreporting IGA FFI",
+          "bind": "",
+          "width": "full",
+          "items": [
+            {
+              "type": "checkbox",
+              "width": "full",
+              "bind": "part12.26a",
+              "required": false,
+              "label": "26",
+              "options": [
+                {
+                  "label": "I certify that the entity identified in Part I:",
+                  "value": "Nonreporting IGA FFI"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "width": "full",
+              "label": "• Meets the requirements to be considered a nonreporting financial institution pursuant to an applicable IGA between the United States and",
+              "bind": "part12.26b",
+              "required": false
+            },
+            {
+              "type": "radio",
+              "width": "full",
+              "label": "The applicable IGA is a",
+              "required": false,
+              "bind": "part12.26c",
+              "options": [
+                {
+                  "label": "Model 1 IGA or a",
+                  "value": "Model 1 IGA"
+                },
+                {
+                  "label": "Model 2 IGA;",
+                  "value": "Model 2 IGA;"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "width": "full",
+              "label": "and is treated as a",
+              "required": false,
+              "bind": "part12.26d",
+              "description": "under the provisions of the applicable IGA or Treasury regulations"
+            },
+            {
+              "type": "paragraph",
+              "width": "half",
+              "label": "(if applicable, see instructions);"
+            },
+            {
+              "type": "text",
+              "width": "full",
+              "label": "• If you are a trustee documented trust or a sponsored entity, provide the name of the trustee or sponsor",
+              "bind": "part.12.26e",
+              "required": false
+            },
+            {
+              "type": "radio",
+              "width": "half",
+              "label": "The trustee is:",
+              "required": false,
+              "options": [
+                {
+                  "label": "U.S.",
+                  "value": "U.S."
+                },
+                {
+                  "label": "Foreign",
+                  "value": "Foreign"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "panel",
+          "label": "Part XIII - Foreign Government, Government of a U.S. Possession, or Foreign Central Bank of Issue",
+          "width": "full",
+          "items": [
+            {
+              "type": "checkbox",
+              "width": "full",
+              "bind": "part13.27",
+              "required": false,
+              "label": "27.",
+              "options": [
+                {
+                  "label": "I certify that the entity identified in Part I is the beneficial owner of the payment, and is not engaged in commercial financial activities of a type engaged in by an insurance company, custodial institution, or depository institution with respect to the payments, accounts, or obligations for which this form is submitted (except as permitted in Regulations section 1.1471-6(h)(2)).",
+                  "value": "Foreign Government, Government of a U.S. Possession, or Foreign Central Bank of Issue"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "panel",
+          "label": "Part XIV - International Organization",
+          "bind": "",
+          "width": "full",
+          "items": [
+            {
+              "type": "checkbox",
+              "width": "full",
+              "bind": "",
+              "required": false,
+              "label": "",
+              "options": [
+                {
+                  "label": "",
+                  "value": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "panel",
+          "label": "Part XV - Exempt Retirement Plans",
+          "bind": "",
+          "width": "full",
+          "items": [
+            {
+              "type": "checkbox",
+              "width": "full",
+              "bind": "",
+              "required": false,
+              "label": "",
+              "options": [
+                {
+                  "label": "",
+                  "value": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "panel",
+          "label": "Part XVI - Entity Wholly Owned by Exempt Beneficial Owners",
+          "bind": "",
+          "width": "full",
+          "items": [
+            {
+              "type": "checkbox",
+              "width": "full",
+              "bind": "",
+              "required": false,
+              "label": "",
+              "options": [
+                {
+                  "label": "",
+                  "value": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "panel",
+          "label": "Part XVII - Territory Financial Institution",
+          "bind": "",
+          "width": "full",
+          "items": [
+            {
+              "type": "checkbox",
+              "width": "full",
+              "bind": "",
+              "required": false,
+              "label": "",
+              "options": [
+                {
+                  "label": "",
+                  "value": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "panel",
+          "label": "Part XVIII - Excepted Nonfinancial Group Entity",
+          "bind": "",
+          "width": "full",
+          "items": [
+            {
+              "type": "checkbox",
+              "width": "full",
+              "bind": "",
+              "required": false,
+              "label": "",
+              "options": [
+                {
+                  "label": "",
+                  "value": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "panel",
+          "label": "Part XIX - Excepted Nonfinancial Start-Up Company",
+          "bind": "",
+          "width": "full",
+          "items": [
+            {
+              "type": "checkbox",
+              "width": "full",
+              "bind": "",
+              "required": false,
+              "label": "",
+              "options": [
+                {
+                  "label": "",
+                  "value": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "panel",
+          "label": "Part XX - Excepted Nonfinancial Entity in Liquidation or Bankruptcy",
+          "bind": "",
+          "width": "full",
+          "items": [
+            {
+              "type": "checkbox",
+              "width": "full",
+              "bind": "",
+              "required": false,
+              "label": "",
+              "options": [
+                {
+                  "label": "",
+                  "value": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "panel",
+          "label": "Part XXI - 501(c) Organization",
+          "bind": "",
+          "width": "full",
+          "items": [
+            {
+              "type": "checkbox",
+              "width": "full",
+              "bind": "",
+              "required": false,
+              "label": "",
+              "options": [
+                {
+                  "label": "",
+                  "value": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "panel",
+          "label": "Part XXII - Nonprofit Organization",
+          "bind": "",
+          "width": "full",
+          "items": [
+            {
+              "type": "checkbox",
+              "width": "full",
+              "bind": "",
+              "required": false,
+              "label": "",
+              "options": [
+                {
+                  "label": "",
+                  "value": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "panel",
+          "label": "Part XXIII - Publicly Traded NFFE or NFFE Affiliate of a Publicly Traded Corporation",
+          "bind": "",
+          "width": "full",
+          "items": [
+            {
+              "type": "checkbox",
+              "width": "full",
+              "bind": "",
+              "required": false,
+              "label": "",
+              "options": [
+                {
+                  "label": "",
+                  "value": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "panel",
+          "label": "Part XXIV - Excepted Territory NFFE",
+          "bind": "",
+          "width": "full",
+          "items": [
+            {
+              "type": "checkbox",
+              "width": "full",
+              "bind": "",
+              "required": false,
+              "label": "",
+              "options": [
+                {
+                  "label": "",
+                  "value": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "panel",
+          "label": "Part XXV - Active NFFE",
+          "bind": "",
+          "width": "full",
+          "items": [
+            {
+              "type": "checkbox",
+              "width": "full",
+              "bind": "",
+              "required": false,
+              "label": "",
+              "options": [
+                {
+                  "label": "",
+                  "value": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "panel",
+          "label": "Part XXVI - Passive NFFE",
+          "bind": "",
+          "width": "full",
+          "items": [
+            {
+              "type": "checkbox",
+              "width": "full",
+              "bind": "",
+              "required": false,
+              "label": "",
+              "options": [
+                {
+                  "label": "",
+                  "value": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "panel",
+          "label": "Part XXVII - Excepted Inter-Affiliate FFI",
+          "bind": "",
+          "width": "full",
+          "items": [
+            {
+              "type": "checkbox",
+              "width": "full",
+              "bind": "",
+              "required": false,
+              "label": "",
+              "options": [
+                {
+                  "label": "",
+                  "value": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "panel",
+          "label": "Part XXVIII - Sponsored Direct Reporting NFFE (see instructions for when this is permitted)",
+          "bind": "",
+          "width": "full",
+          "items": [
+            {
+              "type": "checkbox",
+              "width": "full",
+              "bind": "",
+              "required": false,
+              "label": "",
+              "options": [
+                {
+                  "label": "",
+                  "value": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "panel",
+          "label": "Part XXIX - Substantial U.S. Owners of Passive NFFE",
+          "bind": "",
+          "width": "full",
+          "items": [
+            {
+              "type": "checkbox",
+              "width": "full",
+              "bind": "",
+              "required": false,
+              "label": "",
+              "options": [
+                {
+                  "label": "",
+                  "value": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "panel",
+          "width": "full",
+          "label": "Part XXX - Certification and Electronic Signature",
           "items": [
             {
               "type": "paragraph",
