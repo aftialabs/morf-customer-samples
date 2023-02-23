@@ -1,12 +1,12 @@
 {
     "config": {
       "submit": "https://prod-30.canadacentral.logic.azure.com:443/workflows/4237c8dd05754a88bd28b71900f58bb4/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=ed6Ly30ieeQBPf7fpk9zch9PYsSxB-ouI2MmazE1yfk",
-      "siteKey": "4fbfd303f2f74c6ea2ec3bc9ab44d454",
+      "siteKey": "f2b7864515aa4d52bda041cdaf448ec8",
       "successUrl": "https://www.getmorf.io/"
     },
     "head": {
       "title": "TENANT BACKGROUND AUTHORIZATION",
-      "logo": "https://cdn.theliftsystem.com/clvgroup/images/logos/1632254452_clv_-_english.png"
+      "logo": "https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
     },
     "body": {
       "items": [

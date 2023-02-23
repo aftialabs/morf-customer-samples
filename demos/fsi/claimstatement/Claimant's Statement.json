@@ -1,0 +1,684 @@
+{
+  "config": {
+    "submit": "",
+    "siteKey": "",
+    "successUrl": "http://getmorf.io/"
+  },
+  "head": {
+    "title": "Claimant's Statement",
+    "logo": "https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
+  },
+  "body": {
+    "items": [
+      {
+        "type": "panel",
+        "label": "CLAIM CHECKLIST",
+        "width": "full",
+        "items": [
+          {
+            "type": "checkbox",
+            "bind": "CLAIM CHECKLIST",
+            "width": "full",
+            "options": [
+              {
+                "label": "SIGN and DATE this completed form, then submit using one of the above methods.",
+                "value": "ClaimChecklist_1"
+              },
+              {
+                "label": "Attach a death certificate indicating manner and cause of death (a certified death certificate is required if the benefit is above $500,000 or upon request) and any other required documentation. Missing or incomplete information may delay claim processing.",
+                "value": "ClaimChecklist_2"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "panel",
+        "label": "GOOD ORDER",
+        "width": "full",
+        "items": [
+          {
+            "type": "paragraph",
+            "width": "full",
+            "label": "To process this paperwork in a timely manner, it must be received in good order; all questions answered, dated and all necessary signatures furnished. Forms and other requested information not received in good order may be returned to you for completion and will be processed when resubmitted in good order. The Company reserves the right to require or to obtain further proof or information should it be deemed necessary."
+          }
+        ]
+      },
+      {
+        "type": "panel",
+        "label": "SECTION 1. GROUP OR POLICY INFORMATION",
+        "width": "full",
+        "items": [
+          {
+            "type": "text",
+            "label": "Group or Association Name (If applicable)",
+            "placeholder": "E.g. ACME",
+            "bind": "Group_Name",
+            "value": "Adobe Group"
+          },
+          {
+            "type": "date",
+            "label": "Today's date",
+            "bind": "today"
+          },
+          {
+            "type": "text",
+            "label": "Policy",
+            "placeholder": "E.g. 12345-00",
+            "bind": "policy."
+          },
+          {
+            "type": "text",
+            "label": "Claim Number",
+            "placeholder": "E.g. 12345-00",
+            "bind": "Claim Number"
+          }
+        ]
+      },
+      {
+        "type": "panel",
+        "label": "SECTION 2. INSURED INFORMATION",
+        "width": "full",
+        "items": [
+          {
+            "type": "radio",
+            "label": "Is this an International / Foreign Address?",
+            "bind": "Primary_Insured_Foreign_Address",
+            "width": "full",
+            "options": [
+              {
+                "label": "Yes",
+                "value": "y"
+              },
+              {
+                "label": "No",
+                "value": "n"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "label": "Primary Insured Name",
+            "bind": "Primary_Insured_Birth_Name",
+            "placeholder": "E.g. John",
+            "width": "half"
+          },
+          {
+            "type": "text",
+            "label": "Middle Initial",
+            "bind": "Primary_Insured_Birth_Middle",
+            "placeholder": "E.g. E.",
+            "width": "quarter",
+            "required": false
+          },
+          {
+            "type": "text",
+            "label": "Last Name",
+            "placeholder": "E.g. Doe",
+            "bind": "Primary_Insured_Birth_Last"
+          },
+          {
+            "type": "date",
+            "label": "Birth Date",
+            "bind": "Primary_Insured_Birth_Date"
+          },
+          {
+            "type": "text",
+            "label": "SSN",
+            "bind": "Primary_Insured_SSN",
+            "placeholder": "E.g. 123-45-6789"
+          },
+          {
+            "type": "radio",
+            "label": "Gender",
+            "bind": "Primary_Insured_Gender",
+            "options": [
+              {
+                "label": "Male",
+                "value": "male"
+              },
+              {
+                "label": "Female",
+                "value": "female"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "label": "Other names the Primary Insured may have been known by",
+            "placeholder": "E.g. Bob",
+            "bind": "Primary_Insured_Other_Names",
+            "width": "full",
+            "required": false
+          },
+          {
+            "type": "text",
+            "label": "Address (Line 1)",
+            "placeholder": "E.g. 123 Somestreet",
+            "bind": "Primary_Insured_StreetAdd_A",
+            "width": "full"
+          },
+          {
+            "type": "text",
+            "label": "Address (Line 2)",
+            "placeholder": "E.g. Unit B",
+            "bind": "Primary_Insured_StreetAdd_B",
+            "width": "full",
+            "required": false
+          },
+          {
+            "type": "text",
+            "label": "City",
+            "placeholder": "E.g. Somecity",
+            "bind": "Primary_Insured_City"
+          },
+          {
+            "type": "text",
+            "label": "Province/State",
+            "placeholder": "E.g. Somestate",
+            "bind": "Primary_Insured_State"
+          },
+          {
+            "type": "text",
+            "label": "ZIP",
+            "placeholder": "E.g. 12345",
+            "bind": "Primary_Insured_ZIP"
+          },
+          {
+            "type": "dropdown",
+            "label": "Country",
+            "placeholder": "E.g. Please select",
+            "bind": "Primary_Insured_Country",
+            "options": [
+              {
+                "label": "Canada",
+                "value": "canada"
+              },
+              {
+                "label": "Unites States",
+                "value": "us"
+              }
+            ]
+          },
+          {
+            "type": "email",
+            "label": "Email",
+            "placeholder": "E.g. john.doe@example.com",
+            "bind": "Primary_Insured_Email"
+          },
+          {
+            "type": "tel",
+            "label": "Phone",
+            "placeholder": "E.g. 123-123-4567",
+            "bind": "Primary_Insured_Phone"
+          },
+          {
+            "type": "tel",
+            "label": "International Phone",
+            "placeholder": "E.g. 123-123-4567",
+            "bind": "Primary_Insured_International_Phone"
+          },
+          {
+            "type": "radio",
+            "label": "Marital Status",
+            "bind": "Primary_Insured_Marital_Status",
+            "width": "full",
+            "options": [
+              {
+                "label": "Married",
+                "value": "married"
+              },
+              {
+                "label": "Domestic Partner / Civil Union",
+                "value": "civil"
+              },
+              {
+                "label": "Never Married",
+                "value": "nevermarried"
+              },
+              {
+                "label": "Divorced",
+                "value": "divorced"
+              },
+              {
+                "label": "Widowed",
+                "value": "widowed"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "panel",
+        "label": "SECTION 3. DECEASED INFORMATION",
+        "width": "full",
+        "items": [
+          {
+            "type": "radio",
+            "label": "The Deceased is:",
+            "bind": "Marital Status",
+            "width": "full",
+            "options": [
+              {
+                "label": "The Primary Insured",
+                "value": "primary"
+              },
+              {
+                "label": "Spouse of Primary Insured",
+                "value": "spouse"
+              },
+              {
+                "label": "Domestic Partner / Civil Union of Primary Insured",
+                "value": "union"
+              },
+              {
+                "label": "Child of Primary Insured",
+                "value": "divorced"
+              },
+              {
+                "label": "Other",
+                "value": "other"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "placeholder": "Please specify if applicable",
+            "label": "Other Cause",
+            "required": false
+          },
+          {
+            "type": "text",
+            "placeholder": "E.g. Health Complications",
+            "label": "Cause of Death"
+          },
+          {
+            "type": "dropdown",
+            "placeholder": "E.g. Please select",
+            "label": "Country Where Death Occurred",
+            "options": [
+              {
+                "label": "Canada",
+                "value": "canada"
+              },
+              {
+                "label": "Unites States",
+                "value": "us"
+              }
+            ]
+          },
+          {
+            "type": "date",
+            "label": "Date of Death"
+          },
+          {
+            "type": "file",
+            "width": "full",
+            "required": false,
+            "label": "If caused by injuries, explain (Attach newspaper clipping, if available.)"
+          },
+          {
+            "type": "panel",
+            "width": "full",
+            "items": [
+              {
+                "type": "paragraph",
+                "width": "full",
+                "label": "If Deceased is NOT the Primary Insured, provide the below information."
+              },
+              {
+                "type": "text",
+                "label": "Deceased Name (First)",
+                "placeholder": "E.g. John",
+                "bind": "Deceased_Info_Birth_Name",
+                "width": "half",
+                "required": false
+              },
+              {
+                "type": "text",
+                "label": "Middle Initial",
+                "placeholder": "E.g. E.",
+                "bind": "Deceased_Info_Birth_Middle",
+                "width": "quarter",
+                "required": false
+              },
+              {
+                "type": "text",
+                "label": "Last Name",
+                "placeholder": "E.g. Doe",
+                "bind": "Deceased_Info_Birth_Last",
+                "required": false
+              },
+              {
+                "type": "text",
+                "label": "Address at Time of Death",
+                "placeholder": "E.g. 123 Somestreet",
+                "bind": "Deceased_Info_StreetAdd_A",
+                "width": "full",
+                "required": false
+              },
+              {
+                "type": "text",
+                "label": "City",
+                "placeholder": "E.g. Somecity",
+                "bind": "Deceased_Info_Insured_City",
+                "required": false
+              },
+              {
+                "type": "text",
+                "label": "Province/State",
+                "placeholder": "E.g. Somestate",
+                "bind": "Deceased_Info_Insured_State",
+                "required": false
+              },
+              {
+                "type": "text",
+                "label": "ZIP",
+                "placeholder": "E.g. 12345",
+                "bind": "Deceased_Info_ZIP",
+                "required": false
+              },
+              {
+                "type": "date",
+                "label": "Birth Date",
+                "bind": "Deceased_Info_Birth_Date",
+                "required": false
+              },
+              {
+                "type": "text",
+                "label": "SSN",
+                "placeholder": "E.g. 123-45-6789",
+                "bind": "Deceased_Info_SSN",
+                "required": false
+              },
+              {
+                "type": "radio",
+                "label": "Gender",
+                "bind": "Deceased_Info_Gender",
+                "required": false,
+                "options": [
+                  {
+                    "label": "Male",
+                    "value": "male"
+                  },
+                  {
+                    "label": "Female",
+                    "value": "female"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "panel",
+        "label": "SECTION 4. BENEFICIARY INFORMATION",
+        "width": "full",
+        "items": [
+          {
+            "type": "radio",
+            "label": "Is this an International / Foreign Address?",
+            "bind": "Beneficiary_Info_Foreign_Address",
+            "width": "full",
+            "options": [
+              {
+                "label": "Yes",
+                "value": "y"
+              },
+              {
+                "label": "No",
+                "value": "n"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "label": "Primary Insured Name",
+            "placeholder": "E.g. John",
+            "bind": "Beneficiary_Info_Birth_Name",
+            "width": "half"
+          },
+          {
+            "type": "text",
+            "label": "Middle Initial",
+            "placeholder": "E.g. E.",
+            "bind": "Beneficiary_Info_Birth_Middle",
+            "width": "quarter",
+            "required": false
+          },
+          {
+            "type": "text",
+            "label": "Last Name",
+            "placeholder": "E.g. Doe",
+            "bind": "Beneficiary_Info_Birth_Last"
+          },
+          {
+            "type": "date",
+            "label": "Birth Date",
+            "bind": "Beneficiary_Info_Birth_Date"
+          },
+          {
+            "type": "text",
+            "label": "SSN",
+            "placeholder": "E.g. 123-45-6789",
+            "bind": "Beneficiary_Info_SSN"
+          },
+          {
+            "type": "radio",
+            "label": "Gender",
+            "bind": "Beneficiary_Info_Gender",
+            "options": [
+              {
+                "label": "Male",
+                "value": "male"
+              },
+              {
+                "label": "Female",
+                "value": "female"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "label": "Address (Line 1)",
+            "placeholder": "E.g. 123 Somestreet",
+            "bind": "Beneficiary_Info_StreetAdd_A",
+            "width": "full"
+          },
+          {
+            "type": "text",
+            "label": "Address (Line 2)",
+            "placeholder": "E.g. Unit B",
+            "bind": "Beneficiary_Info_StreetAdd_B",
+            "width": "full",
+            "required": false
+          },
+          {
+            "type": "text",
+            "label": "City",
+            "placeholder": "E.g. Somecity",
+            "bind": "Beneficiary_Info_City"
+          },
+          {
+            "type": "text",
+            "label": "Province/State",
+            "placeholder": "E.g. Somestate",
+            "bind": "Beneficiary_Info_State"
+          },
+          {
+            "type": "text",
+            "label": "ZIP",
+            "placeholder": "E.g. 12345",
+            "bind": "Beneficiary_Info_ZIP"
+          },
+          {
+            "type": "dropdown",
+            "label": "Country",
+            "placeholder": "E.g. Please select",
+            "bind": "Beneficiary_Info_Country",
+            "options": [
+              {
+                "label": "Canada",
+                "value": "canada"
+              },
+              {
+                "label": "Unites States",
+                "value": "us"
+              }
+            ]
+          },
+          {
+            "type": "email",
+            "label": "Email",
+            "placeholder": "E.g. john.doe@example.com",
+            "bind": "Beneficiary_Info_Email"
+          },
+          {
+            "type": "tel",
+            "label": "Phone",
+            "placeholder": "E.g. 123-123-4567",
+            "bind": "Beneficiary_Info_Phone"
+          },
+          {
+            "type": "tel",
+            "label": "International Phone",
+            "placeholder": "E.g. 123-123-4567",
+            "bind": "Beneficiary_Info_International_Phone"
+          },
+          {
+            "type": "panel",
+            "width": "full",
+            "label": "Mailing Address (if different from above)",
+            "items": [
+              {
+                "type": "text",
+                "label": "Address",
+                "placeholder": "E.g. 123 Somestreet",
+                "bind": "Beneficiary_Info_Dif_StreetAdd_A",
+                "width": "full",
+                "required": false
+              },
+              {
+                "type": "text",
+                "label": "City",
+                "placeholder": "E.g. Somecity",
+                "bind": "Beneficiary_Info_Dif_City",
+                "required": false
+              },
+              {
+                "type": "text",
+                "label": "Province/State",
+                "placeholder": "E.g. Somestate",
+                "bind": "Beneficiary_Info_Dif_State",
+                "required": false
+              },
+              {
+                "type": "text",
+                "label": "ZIP",
+                "placeholder": "E.g. 12345",
+                "bind": "Beneficiary_Info_Dif_ZIP",
+                "required": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "panel",
+        "width": "full",
+        "label": "SECTION 5. PREFERRED PAYMENT METHOD",
+        "items": [
+          {
+            "type": "paragraph",
+            "width": "full",
+            "label": "Select from the most common payment options below. For details of all options available to you, refer to the insurance policy or contact us. If you do not select an option and your benefit is greater than $5,000, it will be placed in a Insurance Personal Transition Account described below. If your benefit is less than $5,000 and you do not select an option, a lump sum check will be mailed to you."
+          },
+          {
+            "type": "checkbox",
+            "width": "full",
+            "options": [
+              {
+                "label": "Lump Sum Payment placed into a Insurance Personal Transition Account. Your benefit will be placed in a Insurance Personal Transition Account opened in your name. The Account earns interest with a guaranteed minimum rate and gives you full access to your benefit through a draftbook while you consider your longer-term financial decisions. You can use the draftbook to write a draft for the full balance of the account at any time. Further details are provided in the Supplemental Contract and the Insurance Personal Transition Account brochure. If you would like the benefit paid by a lump sum check, contact us. If you select this option and your claim is less than $5,000, you live in AK, IL, NV, NC, or KS, the Company will mail you a lump sum check.",
+                "value": "lumpsum"
+              },
+              {
+                "label": "Proceeds Held At Interest. Your benefit will be held by the Company while earning interest at a declared rate credited annually. The declared rate may be subject to a guaranteed minimum specified in the policy, which may be higher than the rate offered under the Insurance Personal Transition Account. You can make withdrawals in amounts of $100 or more by contacting us.",
+                "value": "proceeds"
+              },
+              {
+                "label": "Installment options. Your benefit will be paid to you in installments over time while earning interest. If you choose an installment option, contact us and we will assist you in structuring your installment payments. The enclosed document, “Your Payment Options as a Life Insurance Beneficiary”, provides further details.",
+                "value": "installment"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "width": "full",
+            "label": "INTEREST PAYABLE ON INDIVIDUAL LIFE INSURANCE POLICIES ISSUED IN ILLINOIS: As provided by Illinois insurance law, if payment is not made within 31 days from the date we receive due proof of death, interest at the rate of 10% from the date of death to the date of our payment will be included with the death benefit."
+          }
+        ]
+      },
+      {
+        "type": "panel",
+        "width": "full",
+        "label": "SECTION 6. U.S. TAXPAYER CERTIFICATIONS",
+        "items": [
+          {
+            "type": "paragraph",
+            "width": "full",
+            "label": "Under penalties of perjury, I certify that: 1. The Taxpayer Identification Number that appears on this form is correct. 2. I am not subject to backup withholding due to failure to report interest and dividend income; 3. I am a U.S. person."
+          },
+          {
+            "type": "checkbox",
+            "width": "full",
+            "bind": "backupwithholding",
+            "required": false,
+            "options": [
+              {
+                "label": "If I am subject to backup withholding, I have checked here.",
+                "value": "true"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "width": "full",
+            "label": "NON-RESIDENT ALIEN STATUS If you are a Non-Resident Alien, check the box and provide your country of residence below."
+          },
+          {
+            "type": "checkbox",
+            "bind": "alien",
+            "required": false,
+            "options": [
+              {
+                "label": "Under penalties of perjury, I certify that I am a Non-Resident Alien and my country of residence is:",
+                "value": "true"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "placeholder": "E.g. Canada",
+            "name": "residenceCountry",
+            "required": false
+          },
+          {
+            "type": "paragraph",
+            "width": "full",
+            "label": "The amount paid to you will be subject to 30% withholding, unless you submit an IRS Form W-8, and are entitled to claim a reduced rate of withholding under the applicable U.S. tax treaty."
+          },
+          {
+            "type": "paragraph",
+            "width": "full",
+            "label": "The Internal Revenue Service does not require your consent to any provision of this document other than the certifications required to avoid backup withholding."
+          }
+        ]
+      },
+      {
+        "type": "submit",
+        "label": "Sign Document"
+      }
+    ]
+  }
+}

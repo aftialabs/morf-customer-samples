@@ -1,0 +1,44 @@
+{
+  "config": {
+    "submit": "",
+    "siteKey": ""
+  },
+  "head": {},
+  "body": {
+    "items": [
+      {
+        "type": "paragraph",
+        "label": "Join our development community and gain access to our APIs right now!",
+        "width": "full"
+      },
+      {
+        "type": "text",
+        "label": "First Name",
+        "placeholder": "E.g. John",
+        "bind": "developer.firstname"
+      },
+      {
+        "type": "text",
+        "label": "Last Name",
+        "placeholder": "E.g. Doe",
+        "bind": "developer.lastname"
+      },
+      {
+        "type": "email",
+        "label": "Email",
+        "width": "full",
+        "placeholder": "E.g. john.doe@example.com",
+        "bind": "developer.email"
+      },
+      {
+        "type": "hidden",
+        "value": "ACME Org.",
+        "bind": "organization.name"
+      },
+      {
+        "type": "submit",
+        "label": "Go!"
+      }
+    ]
+  }
+}

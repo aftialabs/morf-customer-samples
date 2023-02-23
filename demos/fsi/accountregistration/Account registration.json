@@ -1,1 +1,160 @@
-Will update this in the near future
+{
+    "config": {
+      "siteKey": "f2b7864515aa4d52bda041cdaf448ec8",
+      "successUrl": "https://www.getmorf.io/",
+      "submit": "https://prod-26.canadacentral.logic.azure.com:443/workflows/582e523825684bd6b5746b79018e8bf8/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=kAhOG5UZYkwQF8MLikf7o7L7tDvgdruyO8Ex8C9AZ28"
+    },
+    "head": {
+      "title": "Account Registration",
+      "logo": "https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
+    },
+    "body": {
+      "items": [
+        {
+          "type": "panel",
+          "label": "Client Information",
+          "width": "full",
+          "items": [
+            {
+              "type": "dropdown",
+              "label": "Title",
+              "bind": "client.title",
+              "width": "full",
+              "options": [
+                {
+                  "value": "Ms.",
+                  "label": "Ms."
+                },
+                {
+                  "value": "Mrs.",
+                  "label": "Mrs."
+                },
+                {
+                  "value": "Mr.",
+                  "label": "Mr."
+                },
+                {
+                  "value": "Miss",
+                  "label": "Miss"
+                }
+              ]
+            },         
+            {
+              "type": "text",
+              "label": "First Name",
+              "bind": "client.firstName"
+            },         
+            {
+              "type": "text",
+              "label": "Last Name",
+              "bind": "client.lastName"
+            },
+            {
+              "type": "email",
+              "label": "Email",
+              "bind": "client.email",
+              "width": "full"
+            },
+            {
+              "type": "date",
+              "label": "Date of Birth",
+              "bind": "client.dob"
+            },
+            {
+              "type": "text",
+              "label": "Zip/Postal Code",
+              "bind": "client.zip"
+            },
+            {
+              "type": "text",
+              "label": "Address",
+              "bind": "client.address"
+            },
+            {
+              "type": "text",
+              "label": "Address 2",
+              "bind": "client.address2",
+              "value": "-"
+            },
+            {
+              "type": "text",
+              "label": "City",
+              "bind": "client.city"
+            },
+            {
+              "type": "text",
+              "label": "State/Province",
+              "bind": "client.state"
+            },
+            {
+              "type": "text",
+              "label": "Occupation",
+              "bind": "client.occupation"
+            },
+            {
+              "type": "dropdown",
+              "label": "Employment Status",
+              "bind": "client.es",
+              "options": [
+                {
+                  "value": "Not Employed",
+                  "label": "Not Employed"
+                },
+                {
+                  "value": "Employed Full Time",
+                  "label": "Employed Full Time"
+                },
+                {
+                  "value": "Employed Part Time",
+                  "label": "Employed Part Time"
+                },
+                {
+                  "value": "Self Employed",
+                  "label": "Self Employed"
+                }
+              ]
+            },
+            {
+              "type": "tel",
+              "label": "Phone",
+              "bind": "client.phone"
+            },
+            {
+              "type": "text",
+              "label": "Income Amount",
+              "bind": "client.income"
+            }
+          ]
+        },
+        {
+          "type": "panel",
+          "label": "Assets or Properties",
+          "width": "full",
+          "min": 1,
+          "max": 25,
+          "bind": "ap.item",
+          "items": [
+            {
+              "type": "text",
+              "label": "Asset or Property Name",
+              "bind": "ap.item[*].name"
+            },
+            {
+              "type": "text",
+              "label": "Asset or Property Description",
+              "bind": "ap.item[*].desc"
+            },
+            {
+              "type": "text",
+              "label": "Asset or Property Value",
+              "bind": "ap.item[*].value"
+            }
+          ]
+        },
+        {
+          "type": "submit",
+          "label": "Submit"
+        }
+      ]
+    }
+  }

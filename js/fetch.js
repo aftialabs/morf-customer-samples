@@ -13,10 +13,11 @@ if (formRef){
         if (this.readyState != 4) return;
 
         if (this.status == 200) {
+            const form = JSON.parse(this.responseText);
             window.morfConfig = {
                 siteKey: 'ad702064b01c41a88c0946b0ea250ce2',
                 targetSelector: '#morfcontent',
-                definition: JSON.parse(this.responseText)
+                definition: form
             };
 
             var embed = document.createElement('script');

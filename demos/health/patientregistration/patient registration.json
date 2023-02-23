@@ -1,1 +1,165 @@
-will update in the near future
+{
+    "config": {
+      "siteKey": "f2b7864515aa4d52bda041cdaf448ec8",
+      "successUrl": "https://www.getmorf.io/",
+      "submit": "https://prod-11.canadacentral.logic.azure.com:443/workflows/a3dc3d18a76c4275a7d80a16421fccde/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=M93HOXKpOU7UZIkBxeDlCUDGAIS9nYuxa-11A3NrgEA"
+    },
+    "head": {
+      "title": "Patient Registration",
+      "logo": "https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
+    },
+    "body": {
+      "items": [
+        {
+          "type": "panel",
+          "label": "Patient Information",
+          "width": "full",
+          "items": [
+            {
+              "type": "dropdown",
+              "label": "Title",
+              "bind": "patient.title",
+              "width": "full",
+              "options": [
+                {
+                  "value": "Ms.",
+                  "label": "Ms."
+                },
+                {
+                  "value": "Mrs.",
+                  "label": "Mrs."
+                },
+                {
+                  "value": "Mr.",
+                  "label": "Mr."
+                },
+                {
+                  "value": "Miss",
+                  "label": "Miss"
+                }
+              ]
+            },         
+            {
+              "type": "text",
+              "label": "First Name",
+              "bind": "patient.firstName"
+            },         
+            {
+              "type": "text",
+              "label": "Last Name",
+              "bind": "patient.lastName"
+            },
+            {
+              "type": "email",
+              "label": "Email",
+              "bind": "patient.email",
+              "width": "full"
+            },
+            {
+              "type": "date",
+              "label": "Date of Birth",
+              "bind": "patient.dob"
+            },
+            {
+              "type": "text",
+              "label": "Zip",
+              "bind": "patient.zip"
+            },
+            {
+              "type": "text",
+              "label": "Address",
+              "bind": "patient.address"
+            },
+            {
+              "type": "text",
+              "label": "Address 2",
+              "bind": "patient.address2",
+              "value": "-"
+            },
+            {
+              "type": "text",
+              "label": "City",
+              "bind": "patient.city"
+            },
+            {
+              "type": "text",
+              "label": "State",
+              "bind": "patient.state"
+            },
+            {
+              "type": "radio",
+              "label": "Taking Any Medication?",
+              "bind": "patient.medication",
+              "options": [
+                {
+                    "value": "Yes",
+                    "label": "Yes"
+                },
+                {
+                    "value": "No",
+                    "label": "No"
+                }
+              ]
+            },
+            {
+              "type": "dropdown",
+              "label": "Health Status",
+              "bind": "patient.hs",
+              "options": [
+                {
+                  "value": "Healthy",
+                  "label": "Healthy"
+                },
+                {
+                  "value": "Not Healthy",
+                  "label": "Not Healthy"
+                },
+                {
+                  "value": "Suffering from Pain",
+                  "label": "Suffering from Pain"
+                },
+                {
+                  "value": "Not Sure - Requires Checkup",
+                  "label": "Not Sure - Requires Checkup"
+                }
+              ]
+            },
+            {
+              "type": "tel",
+              "label": "Phone",
+              "bind": "patient.phone"
+            },
+            {
+              "type": "text",
+              "label": "Current Healthcare Provider",
+              "bind": "patient.chp"
+            }
+          ]
+        },
+        {
+          "type": "panel",
+          "label": "Current Medication",
+          "width": "full",
+          "min": 1,
+          "max": 50,
+          "bind": "cm.item",
+          "items": [
+            {
+              "type": "text",
+              "label": "Medication Name",
+              "bind": "cm.item[*].name"
+            },
+            {
+              "type": "text",
+              "label": "Medication Amount",
+              "bind": "cm.item[*].amount"
+            }
+          ]
+        },
+        {
+          "type": "submit",
+          "label": "Submit"
+        }
+      ]
+    }
+  }

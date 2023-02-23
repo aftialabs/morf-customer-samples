@@ -1,0 +1,290 @@
+{
+  "config": {
+    "successUrl": "http://aftia.com/"
+  },
+  "head": {
+    "title": "Adobe Sign Post Sales Engagement",
+    "logo": "data:image/png;base64,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"
+  },
+  "body": {
+    "items": [
+      {
+        "type": "dropdown",
+        "label": "Engagement Type",
+        "placeholder": "Please select a type",
+        "options": [
+          {
+            "label": "Sign Seeding",
+            "value": "Sign Seeding"
+          },
+          {
+            "label": "Package 1 (<$10k)",
+            "value": "Package 1 (<$10k)"
+          },
+          {
+            "label": "Package 2 ($10k - $15k)",
+            "value": "Package 2 ($10k - $15k)"
+          },
+          {
+            "label": "Package 3 ($15k - $25k)",
+            "value": "Package 3 ($15k - $25k)"
+          },
+          {
+            "label": "Package 4 (>$25k)",
+            "value": "Package 4 (>$25k)"
+          },
+          {
+            "label": "Other - Custom",
+            "value": "Other - Custom"
+          }
+        ]
+      },
+      {
+        "type": "dropdown",
+        "label": "Engagement Payer",
+        "placeholder": "Please select a payer",
+        "description": "Who is paying for the services?",
+        "options": [
+          {
+            "label": "Adobe (promo)",
+            "value": "Adobe (promo)"
+          },
+          {
+            "label": "Customer",
+            "value": "Customer"
+          }
+        ]
+      },
+      {
+        "type": "panel",
+        "label": "Services",
+        "width": "full",
+        "min": 1,
+        "max": 5,
+        "items": [
+          {
+            "type": "dropdown",
+            "placeholder": "Please select or add a type of service",
+            "width": "full",
+            "options": [
+              {
+                "label": "MS Integration",
+                "value": "MS Integration"
+              },
+              {
+                "label": "SFDC Integration",
+                "value": "SFDC Integration"
+              },
+              {
+                "label": "Adobe Sign Mentoring",
+                "value": "Adobe Sign Mentoring"
+              },
+              {
+                "label": "DocuSign conversion",
+                "value": "DocuSign conversion"
+              },
+              {
+                "label": "Additional Use Case",
+                "value": "Additional Use Case"
+              },
+              {
+                "label": "Other (describe in notes)",
+                "value": "Other (describe in notes)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "panel",
+        "label": "Customer",
+        "width": "full",
+        "items": [
+          {
+            "type": "text",
+            "label": "Company Name",
+            "placeholder": "Please enter a company name"
+          },
+          {
+            "type": "number",
+            "label": "VIP#",
+            "placeholder": "Please enter a VIP#"
+          },
+          {
+            "type": "text",
+            "label": "Contact Name",
+            "placeholder": "Please enter a contact name"
+          },
+          {
+            "type": "email",
+            "label": "Contact Email",
+            "placeholder": "Please enter a contact email"
+          }
+        ]
+      },
+      {
+        "type": "panel",
+        "label": "Partner",
+        "width": "full",
+        "items": [
+          {
+            "type": "text",
+            "label": "Partner Company Name",
+            "placeholder": "Please enter a partner company name"
+          },
+          {
+            "type": "text",
+            "label": "Contact Name",
+            "placeholder": "Please enter a contact name"
+          },
+          {
+            "type": "email",
+            "label": "Contact Email",
+            "placeholder": "Please enter a contact email"
+          },
+          {
+            "type": "radio",
+            "label": "Include on call?",
+            "options": [
+              {
+                "label": "Yes",
+                "value": "y"
+              },
+              {
+                "label": "No",
+                "value": "n"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "panel",
+        "label": "Adobe Contact",
+        "width": "full",
+        "items": [
+          {
+            "type": "text",
+            "label": "Contact Name",
+            "placeholder": "Please enter a contact name"
+          },
+          {
+            "type": "email",
+            "label": "Contact Email",
+            "placeholder": "Please enter a contact email"
+          },
+          {
+            "type": "radio",
+            "label": "Include on call?",
+            "options": [
+              {
+                "label": "Yes",
+                "value": "y"
+              },
+              {
+                "label": "No",
+                "value": "n"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "dropdown",
+        "label": "Acrobat Type",
+        "placeholder": "Please select a type",
+        "options": [
+          {
+            "label": "VIP Teams",
+            "value": "VIP Teams"
+          },
+          {
+            "label": "VIP Enterprise",
+            "value": "VIP Enterprise"
+          },
+          {
+            "label": "ETLA",
+            "value": "ETLA"
+          },
+          {
+            "label": "Perpetual",
+            "value": "Perpetual"
+          }
+        ]
+      },
+      {
+        "type": "textarea",
+        "label": "Notes or Use Case",
+        "width": "full",
+        "placeholder": "Please enter notes (optional)",
+        "required": false
+      },
+      {
+        "type": "panel",
+        "label": "Requested Meeting Times",
+        "width": "full",
+        "min": 1,
+        "max": 5,
+        "items": [
+          {
+            "type": "dropdown",
+            "label": "Timing",
+            "width": "third",
+            "placeholder": "Please select the timing",
+            "options": [
+              {
+                "label": "Immediate",
+                "value": "Immediate"
+              },
+              {
+                "label": "Post Onboarding",
+                "value": "Post Onboarding"
+              },
+              {
+                "label": "Other- Notes",
+                "value": "Other- Notes"
+              }
+            ]
+          },
+          {
+            "type": "dropdown",
+            "label": "Time Zone",
+            "placeholder": "Please select a time zone",
+            "width": "third",
+            "options": [
+              {
+                "label": "Pacific",
+                "value": "Pacific"
+              },
+              {
+                "label": "Mountain",
+                "value": "Mountain"
+              },
+              {
+                "label": "Central",
+                "value": "Central"
+              },
+              {
+                "label": "Eastern",
+                "value": "Eastern"
+              }
+            ]
+          },
+          {
+            "type": "datetimelocal",
+            "label": "Meeting Time",
+            "width": "third"
+          }
+        ]
+      },
+      {
+        "type": "reset",
+        "label": "Reset"
+      },
+      {
+        "type": "submit",
+        "label": "Submit"
+      }
+    ]
+  }
+}

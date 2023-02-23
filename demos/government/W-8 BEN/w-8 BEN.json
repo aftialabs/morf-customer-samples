@@ -1,0 +1,198 @@
+{
+  "config": {
+    "siteKey": "f2b7864515aa4d52bda041cdaf448ec8",
+    "successUrl": "https://getmorf.io/",
+    "submit": ""
+  },
+  "head": {
+    "title": "W-8BEN Certificate of Foreign Status of Beneficial Owner for United States Tax Withholding and Reporting (Individuals)",
+    "logo": "https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
+  },
+  "body": {
+    "items": [
+      {
+        "type": "paragraph",
+        "width": "full",
+        "label": "Go to www.irs.gov/FormW8 for instructions and the latest information."
+      },
+      {
+        "type": "panel",
+        "width": "full",
+        "label": "Part I - Identification of Beneficial Owner",
+        "items": [
+          {
+            "type": "text",
+            "width": "half",
+            "label": "1. Name of individual who is the beneficial owner",
+            "bind": "part1.1name"
+          },
+          {
+            "type": "text",
+            "width": "half",
+            "label": "2. Country of citizenship",
+            "bind": "part1.2citizenship"
+          },
+          {
+            "type": "text",
+            "width": "full",
+            "label": "3. Permanent residence address (street, apt. or suite no., or rural route). Do not use a P.O. box or in-care-of address.",
+            "bind": "part1.3address"
+          },
+          {
+            "type": "text",
+            "width": "half",
+            "label": "City or town, state or province. Include postal code where appropriate.",
+            "bind": "part1.3cityZIP"
+          },
+          {
+            "type": "text",
+            "width": "half",
+            "label": "Country",
+            "bind": "part1.3country"
+          },
+          {
+            "type": "text",
+            "width": "full",
+            "label": "4. Mailing address (if different from above)",
+            "bind": "part1.4mailingAddress",
+            "required": false
+          },
+          {
+            "type": "text",
+            "width": "half",
+            "label": "City or town, state or province. Include postal code where appropriate.",
+            "bind": "part1.4cityZIP",
+            "required": false
+          },
+          {
+            "type": "text",
+            "width": "half",
+            "label": "Country",
+            "bind": "part1.4country",
+            "required": false
+          },
+          {
+            "type": "text",
+            "width": "full",
+            "label": "5. U.S. taxpayer identification number (SSN or ITIN), if required (see instructions)",
+            "bind": "part1.5ssn"
+          },
+          {
+            "type": "text",
+            "width": "half",
+            "label": "6a. Foreign tax identifying number (see instructions)",
+            "bind": "part1.6a",
+            "required": false
+          },
+          {
+            "type": "checkbox",
+            "width": "half",
+            "label": "6b. Check if FTIN not legally required",
+            "bind": "part1.6b",
+            "required": false,
+            "options": [
+              {
+                "value": "FTIN not legally required",
+                "label": "FTIN not legally required"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "width": "half",
+            "label": "7. Reference number(s) (see instructions)",
+            "bind": "part1.7refNum",
+            "required": false
+          },
+          {
+            "type": "text",
+            "width": "half",
+            "label": "8. Date of birth (MM-DD-YYYY) (see instructions)",
+            "bind": "part1.8dob"
+          }
+        ]
+      },
+      {
+        "type": "panel",
+        "width": "full",
+        "label": "Part II - Claim of Tax Treaty Benefits (for chapter 3 purposes only) (see instructions)",
+        "items": [
+          {
+            "type": "text",
+            "width": "full",
+            "label": "9. I certify that the beneficial owner is a resident of",
+            "bind": "part2.9residency",
+            "description": "within the meaning of the income tax treaty between the United States and that country."
+          },
+          {
+            "type": "panel",
+            "width": "full",
+            "label": "10. Special rates and conditions (if applicable - see instructions):",
+            "items": [
+              {
+                "type": "text",
+                "width": "half",
+                "label": "The beneficial owner is claiming the provisions of Article and paragraph",
+                "bind": "part2.10a",
+                "required": false
+              },
+              {
+                "type": "text",
+                "width": "quarter",
+                "label": "of the treaty identified on line 9 above to claim a %",
+                "bind": "part2.10b",
+                "required": false
+              },
+              {
+                "type": "text",
+                "width": "full",
+                "label": "rate of withholding on (specify type of income):",
+                "bind": "part2.10c",
+                "required": false
+              },
+              {
+                "type": "textarea",
+                "width": "full",
+                "label": "Explain the additional conditions in the Article and paragraph the beneficial owner meets to be eligible for the rate of withholding:",
+                "bind": "part2.10d",
+                "required": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "panel",
+        "width": "full",
+        "label": "Part III - Certification and Electronic Signature",
+        "items": [
+          {
+            "type": "paragraph",
+            "width": "full",
+            "label": "NOTE: Submitting this form will populate a PDF version of the W-8 BEN form and send it to you by email for electronic signature, read the certification instructions in W-8 by visiting www.irs.gov/FormW8"
+          },
+          {
+            "type": "checkbox",
+            "width": "half",
+            "bind": "part3.certificationCheckbox",
+            "options": [
+              {
+                "value": "I certify that I have the capacity to sign for the person identified on line 1 of this form.",
+                "label": "I certify that I have the capacity to sign for the person identified on line 1 of this form." 
+              }
+            ]
+          },
+          {
+            "type": "email",
+            "bind": "part3.email",
+            "label": "Your email address"
+          }
+        ]
+      },
+      {
+        "type": "submit",
+        "label": "Submit"
+      }
+    ]
+  }
+}
